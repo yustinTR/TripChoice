@@ -1,0 +1,14 @@
+uuid: 24643062-8d64-481f-88a6-d830a54e961a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.stay
+id: node_type_stay
+entity_type_id: node_type
+entity_id: stay
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

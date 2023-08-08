@@ -1,0 +1,30 @@
+uuid: cd14dad4-bcc4-47ec-ad76-61356f7bba1d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.trip.field_city
+    - field.field.node.trip.field_country
+    - field.field.node.trip.field_paragraphs
+    - field.field.node.trip.field_trip_type
+    - node.type.trip
+  module:
+    - user
+id: node.trip.teaser
+targetEntityType: node
+bundle: trip
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_city: true
+  field_country: true
+  field_paragraphs: true
+  field_trip_type: true
+  langcode: true
+  search_api_excerpt: true

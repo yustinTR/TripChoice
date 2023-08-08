@@ -1,0 +1,41 @@
+uuid: bdea7e2a-58c1-4b91-8d5f-ac99dd240cee
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.stay.field_paragraphs
+    - field.field.node.stay.field_stay_sort
+    - node.type.stay
+  module:
+    - entity_reference_revisions
+    - options
+    - user
+id: node.stay.default
+targetEntityType: node
+bundle: stay
+mode: default
+content:
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_stay_sort:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

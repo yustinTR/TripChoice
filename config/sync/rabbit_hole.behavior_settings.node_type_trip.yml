@@ -1,0 +1,14 @@
+uuid: ed66ed8e-3ee8-4fd5-94cf-f3ec91dfdd25
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.trip
+id: node_type_trip
+entity_type_id: node_type
+entity_id: trip
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

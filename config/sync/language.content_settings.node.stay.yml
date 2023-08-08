@@ -1,0 +1,11 @@
+uuid: edf60fe5-51e1-46d0-b87d-b10cce864040
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.stay
+id: node.stay
+target_entity_type_id: node
+target_bundle: stay
+default_langcode: site_default
+language_alterable: false

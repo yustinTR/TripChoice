@@ -1,0 +1,59 @@
+uuid: b45f536e-7058-4f3e-a6e1-163916cb822b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.trip.field_city
+    - field.field.node.trip.field_country
+    - field.field.node.trip.field_paragraphs
+    - field.field.node.trip.field_trip_type
+    - node.type.trip
+  module:
+    - entity_reference_revisions
+    - user
+id: node.trip.default
+targetEntityType: node
+bundle: trip
+mode: default
+content:
+  field_city:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_country:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_trip_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

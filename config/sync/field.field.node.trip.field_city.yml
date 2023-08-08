@@ -1,17 +1,16 @@
-uuid: b91cc7b3-0a34-4d72-944f-caae9ee6206f
+uuid: 1a65fb3f-20e0-479b-8316-2346ce729f1f
 langcode: nl
 status: true
 dependencies:
   config:
-    - field.storage.node.field_news_type
-    - node.type.news
-_core:
-  default_config_hash: c7GHdTMKdR6Mnu0m2a-B74V2uAFXX2OFESmslRhwKgM
-id: node.news.field_news_type
-field_name: field_news_type
+    - field.storage.node.field_city
+    - node.type.trip
+    - taxonomy.vocabulary.city
+id: node.trip.field_city
+field_name: field_city
 entity_type: node
-bundle: news
-label: 'Nieuws type'
+bundle: trip
+label: Stad
 description: ''
 required: false
 translatable: false
@@ -20,7 +19,8 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      city: city
     sort:
       field: name
       direction: asc

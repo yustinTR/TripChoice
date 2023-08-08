@@ -1,4 +1,4 @@
-uuid: 063e7bd6-3285-412f-bbe6-1044ce6d6f72
+uuid: d5cf73f3-071c-44b0-b13c-081c96118695
 langcode: nl
 status: true
 dependencies:
@@ -18,9 +18,7 @@ third_party_settings:
     unpublish_enable: false
     unpublish_required: false
     unpublish_revision: false
-_core:
-  default_config_hash: 54c53JmvWA9tJ9Q9XK4Eqt5umx_-i4ENKgMeBRUWfN0
-name: 'Agenda type'
-vid: event_type
+name: Land
+vid: country
 description: ''
 weight: 0

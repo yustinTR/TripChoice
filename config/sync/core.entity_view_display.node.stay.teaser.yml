@@ -1,0 +1,26 @@
+uuid: 8a42b17e-5f02-430a-ab6f-90b16fa9f014
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.stay.field_paragraphs
+    - field.field.node.stay.field_stay_sort
+    - node.type.stay
+  module:
+    - user
+id: node.stay.teaser
+targetEntityType: node
+bundle: stay
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_paragraphs: true
+  field_stay_sort: true
+  langcode: true
+  search_api_excerpt: true

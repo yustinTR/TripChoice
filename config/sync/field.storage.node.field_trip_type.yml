@@ -1,0 +1,20 @@
+uuid: 450f6529-4162-4ab8-b854-f0a61ffd6c52
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_trip_type
+field_name: field_trip_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: 22d99dd7-11b2-4932-85c3-a047f71ce994
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.trip
+id: node.trip
+target_entity_type_id: node
+target_bundle: trip
+default_langcode: site_default
+language_alterable: false

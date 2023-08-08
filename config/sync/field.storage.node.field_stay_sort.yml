@@ -1,0 +1,30 @@
+uuid: b227d549-70d9-465e-b9f7-99e0326eb4bd
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_stay_sort
+field_name: field_stay_sort
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hotel
+      label: Hotel
+    -
+      value: camping
+      label: Camping
+    -
+      value: apartment
+      label: Appartement
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

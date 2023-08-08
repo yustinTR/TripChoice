@@ -1,0 +1,21 @@
+uuid: 84e345a9-093e-41b9-985b-3f62fa4e1d04
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stay_sort
+    - node.type.stay
+  module:
+    - options
+id: node.stay.field_stay_sort
+field_name: field_stay_sort
+entity_type: node
+bundle: stay
+label: 'Soort verblijf'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

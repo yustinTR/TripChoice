@@ -1,0 +1,11 @@
+uuid: 782cf4ea-0795-4a11-847c-d2d86f7a7601
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.trip_type
+id: taxonomy_term.trip_type
+target_entity_type_id: taxonomy_term
+target_bundle: trip_type
+default_langcode: site_default
+language_alterable: false

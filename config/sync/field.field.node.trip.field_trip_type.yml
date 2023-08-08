@@ -1,17 +1,16 @@
-uuid: b91cc7b3-0a34-4d72-944f-caae9ee6206f
+uuid: bcb9c455-591c-4e50-9324-6b46b1f3c5af
 langcode: nl
 status: true
 dependencies:
   config:
-    - field.storage.node.field_news_type
-    - node.type.news
-_core:
-  default_config_hash: c7GHdTMKdR6Mnu0m2a-B74V2uAFXX2OFESmslRhwKgM
-id: node.news.field_news_type
-field_name: field_news_type
+    - field.storage.node.field_trip_type
+    - node.type.trip
+    - taxonomy.vocabulary.trip_type
+id: node.trip.field_trip_type
+field_name: field_trip_type
 entity_type: node
-bundle: news
-label: 'Nieuws type'
+bundle: trip
+label: 'Soort vakantie'
 description: ''
 required: false
 translatable: false
@@ -20,7 +19,8 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      trip_type: trip_type
     sort:
       field: name
       direction: asc

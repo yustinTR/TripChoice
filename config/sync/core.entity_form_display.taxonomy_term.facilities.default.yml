@@ -1,17 +1,15 @@
-uuid: afcba715-1579-4288-981e-a0ab846dacdb
+uuid: 0fd50305-3e73-4ca8-9116-ddbdeb8f9c00
 langcode: nl
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.news_type
+    - taxonomy.vocabulary.facilities
   module:
     - path
     - text
-_core:
-  default_config_hash: uQa_Vh7EnUHNsn_sFjGkZyYQmKTrsmymJ-wvduRw6hM
-id: taxonomy_term.news_type.default
+id: taxonomy_term.facilities.default
 targetEntityType: taxonomy_term
-bundle: news_type
+bundle: facilities
 mode: default
 content:
   description:

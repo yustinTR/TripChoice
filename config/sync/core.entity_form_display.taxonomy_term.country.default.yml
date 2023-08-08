@@ -1,17 +1,15 @@
-uuid: 0fea1aac-f2ee-4665-9e07-a0df4bae298d
+uuid: fc0a8401-3299-4629-b55a-04ba5da2236d
 langcode: nl
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.event_type
+    - taxonomy.vocabulary.country
   module:
     - path
     - text
-_core:
-  default_config_hash: Ijt6TrxnTwvDChmnjcbgNMlYO1VDhT2bpTzUkw2axec
-id: taxonomy_term.event_type.default
+id: taxonomy_term.country.default
 targetEntityType: taxonomy_term
-bundle: event_type
+bundle: country
 mode: default
 content:
   description:

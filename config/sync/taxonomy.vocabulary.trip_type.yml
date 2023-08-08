@@ -1,4 +1,4 @@
-uuid: fd1b47bc-25c1-4b23-b0ee-674c9f9ae184
+uuid: 442dc533-57fc-48b7-9b26-e9034d8ebe08
 langcode: nl
 status: true
 dependencies:
@@ -18,9 +18,7 @@ third_party_settings:
     unpublish_enable: false
     unpublish_required: false
     unpublish_revision: false
-_core:
-  default_config_hash: WeiZvjvD2ntWXD_YJOCeMD_YVLLOuKsE2XAZ2x38DV4
-name: 'Nieuws type'
-vid: news_type
+name: 'Soort vakantie'
+vid: trip_type
 description: ''
-weight: -9
+weight: 0

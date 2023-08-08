@@ -12,8 +12,6 @@ dependencies:
     - node.type.faq
     - node.type.news
     - node.type.page
-    - taxonomy.vocabulary.event_type
-    - taxonomy.vocabulary.news_type
     - taxonomy.vocabulary.subject
     - taxonomy.vocabulary.tags
   module:
@@ -63,8 +61,6 @@ permissions:
   - 'create paragraph content quote'
   - 'create paragraph content text_with_image'
   - 'create remote_video media'
-  - 'create terms in event_type'
-  - 'create terms in news_type'
   - 'create terms in subject'
   - 'create terms in tags'
   - 'create url aliases'
@@ -90,8 +86,6 @@ permissions:
   - 'delete paragraph content image'
   - 'delete paragraph content quote'
   - 'delete paragraph content text_with_image'
-  - 'delete terms in event_type'
-  - 'delete terms in news_type'
   - 'delete terms in subject'
   - 'delete terms in tags'
   - 'edit any events content'
@@ -100,8 +94,6 @@ permissions:
   - 'edit any page content'
   - 'edit own events content'
   - 'edit own faq content'
-  - 'edit terms in event_type'
-  - 'edit terms in news_type'
   - 'edit terms in subject'
   - 'edit terms in tags'
   - 'rabbit hole bypass node'
