@@ -1,0 +1,10 @@
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./components/button/button.scss ***!
+  \******************************************************************************************************************************************************************/
+.button {
+  background: var(--primary-color);
+  border: 0;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=button.css.map*/

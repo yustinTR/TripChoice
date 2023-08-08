@@ -1,0 +1,46 @@
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./components/teaser/teaser.scss ***!
+  \******************************************************************************************************************************************************************/
+.teaser {
+  box-shadow: var(--teaser-box-shadow);
+  color: var(--default-text-color);
+  list-style: none;
+  margin-bottom: var(--spacer);
+  padding-left: 0;
+}
+.teaser-info {
+  padding: 16px;
+}
+.teaser-info h2 {
+  color: var(--default-text-color);
+}
+.teaser-info .teaser-content {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.teaser-info .teaser-content p {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.teaser-info .teaser-content a p {
+  color: var(--default-text-color);
+}
+.teaser-info .teaser-content .teaser-link {
+  bottom: 0;
+  color: var(--default-link-color);
+  font-family: var(--themixbold);
+  position: absolute;
+}
+.teaser-info .teaser-content .teaser-link i {
+  padding-left: 5px;
+}
+.teaser:hover {
+  border: 1px solid var(--aventus-blue);
+}
+
+/*# sourceMappingURL=teaser.css.map*/

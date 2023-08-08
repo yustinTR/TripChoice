@@ -1,1 +1,0 @@
-({382:function(){var e;e=jQuery,Drupal,this.document,e(".mobile-service-toggle").click((function(){e(".mobile-navigation-region").toggleClass("open")}))}})[382]();

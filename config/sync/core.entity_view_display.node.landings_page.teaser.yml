@@ -1,0 +1,26 @@
+uuid: 9d05350b-682f-442c-9454-ccde3c013270
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landings_page.field_header_image
+    - field.field.node.landings_page.field_paragraphs
+    - node.type.landings_page
+  module:
+    - user
+id: node.landings_page.teaser
+targetEntityType: node
+bundle: landings_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_header_image: true
+  field_paragraphs: true
+  langcode: true
+  search_api_excerpt: true

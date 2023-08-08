@@ -3,25 +3,28 @@ langcode: nl
 status: true
 dependencies:
   config:
-    - field.storage.node.field_metatags
-    - field.storage.node.field_event_date
     - field.storage.node.field_event_type
-    - field.storage.node.field_paragraphs
-    - field.storage.paragraph.field_image
+    - field.storage.node.field_event_date
     - field.storage.node.field_introduction
+    - field.storage.node.field_metatags
     - field.storage.node.field_news_type
     - field.storage.node.field_subject
-    - field.storage.paragraph.field_subject
-    - field.storage.node.field_summary
+    - field.storage.node.field_paragraphs
+    - field.storage.paragraph.field_image
     - field.storage.paragraph.field_text
+    - field.storage.paragraph.field_subject
     - field.storage.paragraph.field_title
+    - field.storage.node.field_summary
+    - field.storage.node.field_trip_type
+    - field.storage.node.field_stay_sort
+    - field.storage.node.field_city
     - search_api.server.solr
     - core.entity_view_mode.node.search_index
   module:
     - search_api_solr
     - node
-    - paragraphs
     - taxonomy
+    - paragraphs
     - scheduler
     - search_api
 third_party_settings:
@@ -117,6 +120,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_event_date
+  field_city:
+    label: Stad
+    datasource_id: 'entity:node'
+    property_path: field_city
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_city
   field_event_date:
     label: Datum
     datasource_id: 'entity:node'
@@ -168,6 +179,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_paragraphs
+  field_stay_sort:
+    label: 'Soort verblijf'
+    datasource_id: 'entity:node'
+    property_path: field_stay_sort
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_stay_sort
   field_subject:
     label: Onderwerp
     datasource_id: 'entity:node'
@@ -228,6 +247,14 @@ field_settings:
         - field.storage.paragraph.field_title
       module:
         - paragraphs
+  field_trip_type:
+    label: 'Soort vakantie'
+    datasource_id: 'entity:node'
+    property_path: field_trip_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_trip_type
   parent_field_name:
     label: 'Paragrafen » Paragraaf » Bovenliggende veldnaam'
     datasource_id: 'entity:node'
@@ -317,6 +344,7 @@ processor_settings:
       - field_image
       - field_introduction
       - field_news_type
+      - field_stay_sort
       - field_subject
       - field_subject_1
       - field_subject_name

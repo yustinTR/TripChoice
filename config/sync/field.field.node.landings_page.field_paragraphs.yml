@@ -1,0 +1,52 @@
+uuid: 9025298a-28bc-4e07-b836-918eacce05e8
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.landings_page
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - entity_reference_revisions
+id: node.landings_page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: landings_page
+label: Paragrafen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_with_image: text_with_image
+    negate: 0
+    target_bundles_drag_drop:
+      embed:
+        weight: 13
+        enabled: false
+      faq:
+        weight: 14
+        enabled: false
+      image:
+        weight: 15
+        enabled: false
+      quote:
+        weight: 16
+        enabled: false
+      related_content:
+        weight: 17
+        enabled: false
+      text_with_image:
+        weight: 18
+        enabled: true
+      video:
+        weight: 19
+        enabled: false
+      webform:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

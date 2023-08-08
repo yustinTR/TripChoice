@@ -1,0 +1,33 @@
+uuid: 74ee6016-57a0-4102-8150-ddf95617151a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.country.field_image
+    - taxonomy.vocabulary.country
+  module:
+    - text
+id: taxonomy_term.country.default
+targetEntityType: taxonomy_term
+bundle: country
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

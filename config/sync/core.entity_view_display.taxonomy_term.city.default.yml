@@ -1,0 +1,33 @@
+uuid: 5e5a114e-6fbe-4321-86a3-b0234a73e958
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.city.field_image
+    - taxonomy.vocabulary.city
+  module:
+    - text
+id: taxonomy_term.city.default
+targetEntityType: taxonomy_term
+bundle: city
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

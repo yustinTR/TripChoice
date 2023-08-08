@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## Description: Run sitespeed tests.
+## Usage: sitespeed
+## Example: ddev sitespeed
+
+cd tests/sitespeed.io || exit
+docker run --rm -v "$(pwd):/sitespeed.io" sitespeedio/sitespeed.io --axe.enable --browsertime.iterations 1 --html.showScript --budget.configPath budget.json --budget.output junit --basicAuth klant@KlantLogin --multi test.js --browsertime.chrome.includeResponseBodies html

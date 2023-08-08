@@ -1,0 +1,46 @@
+{#
+/**
+* @file
+* Theme override to display a single page.
+*
+* @see template_preprocess_page()
+* @see html.html.twig
+*/
+#}
+{% include '@tripchoice/layout/header.html.twig' %}
+
+{% if page.highlighted %}
+  <div class="highlighted container">
+    {{ page.highlighted }}
+  </div>
+{% endif %}
+
+<div class="container">
+  <div class="row">
+    <section class="breadcrumb">
+      {{ page.breadcrumb }}
+    </section>
+  </div>
+  <div class="row">
+    <section class="title">
+      {% include 'tripchoice:title' with {
+        'element': 'h1',
+        'title': page['#title'],
+      } %}
+    </section>
+  </div>
+  <div class="row">
+    <main role="main" class=" {% if page.sidebar %} col-12 col-lg-8 {% else %} col-12  {% endif %}">
+      <section class="content">
+        {{ page.content }}
+      </section>
+    </main>
+    {% if page.sidebar %}
+      <aside class="sidebar col-4" role="complementary">
+        {{ page.sidebar }}
+      </aside>
+    {% endif %}
+  </div>
+</div>
+
+{% include '@tripchoice/layout/footer.html.twig' %}

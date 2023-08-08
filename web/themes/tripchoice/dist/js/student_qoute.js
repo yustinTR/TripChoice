@@ -1,1 +1,0 @@
-(()=>{var t=document.querySelectorAll(".views-row");t.forEach((function(t,n){t.style.transform="translateX(".concat(100*n,"%)")}));var n=0,r=t.length-1;setInterval((function(){n===r?n=0:n++,t.forEach((function(t,r){t.style.transform="translateX(".concat(100*(r-n),"%)")}))}),5e3)})();

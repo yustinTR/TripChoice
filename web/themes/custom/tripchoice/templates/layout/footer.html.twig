@@ -1,0 +1,12 @@
+{% if page.footer %}
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner grid center-element full-width">
+      {{ page.footer }}
+      {% if page.footer_bottom %}
+        <div class="footer-bottom container">
+          {{ page.footer_bottom }}
+        </div>
+      {% endif %}
+    </div>
+  </footer>
+{% endif %}

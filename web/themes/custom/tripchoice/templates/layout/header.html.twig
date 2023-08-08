@@ -1,0 +1,35 @@
+<header class="container header">
+  <div class="row">
+    <div class="col-6 col-md-4 col-xl-5">
+      <div class="header-logo">
+        {{  page.branding }}
+      </div>
+    </div>
+    <div class="col-6  col-md-8 col-xl-7">
+      <div class="header-service_menu row">
+        {{ page.service_menu }}
+      </div>
+      <div class="row">
+        <div class="header-search col-6 col-md-10 col-lg-12">
+          <div class="col-12">
+            {{ page.search_block }}
+          </div>
+        </div>
+
+        <div class="hamburger col-12 col-md-2 ">
+          <a href="#hamburgermenu" class="hamburger-toggle mobile-service-toggle" aria-expanded="false" aria-label="{{ "Open mobile navigation menu"|t }}"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-navigation col-12">
+  {{ page.mobile_navigation  }}
+</div>
+
+<div class="container navigation">
+  <div class="row">
+  {{ page.primary_menu }}
+  </div>
+</div>
