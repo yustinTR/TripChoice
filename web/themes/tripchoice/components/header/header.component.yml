@@ -1,0 +1,29 @@
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+name: Header
+status: stable
+description: This component produces header image.
+libraryDependencies:
+  - tripchoice/fontawesome
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: title
+    sub_title:
+      type: string
+      title: title
+    header_blocks:
+      type: boolean
+      title: Header blocks
+    content_type:
+      type: string
+      title: page
+    paragraphs:
+      type: string
+      title: paragraphs
+libraryOverrides:
+  css:
+    component:
+      ../../dist/components/header/header.css: { }
+

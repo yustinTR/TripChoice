@@ -1,0 +1,21 @@
+uuid: 3656d404-4ebc-4d9b-956d-872a0e44b083
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_quote_name
+    - paragraphs.paragraphs_type.quote
+_core:
+  default_config_hash: S7YSmvmmkjHWgIitV2rycQjvttITzs2_RwAq57rOAEU
+id: paragraph.quote.field_quote_name
+field_name: field_quote_name
+entity_type: paragraph
+bundle: quote
+label: Naam
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

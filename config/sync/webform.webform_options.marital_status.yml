@@ -1,0 +1,14 @@
+uuid: 129b43b1-cb22-425e-a623-2cc7c4bad4be
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: cjVDbAE5BlopGrY-tfxsxMoyEibwBBNgdQwDdxOSkow
+id: marital_status
+label: 'Huwelijkse staat'
+category: Demografisch
+likert: false
+options: "Alleenstaand: Alleenstaand\r\nGetrouwd: Getrouwd\r\nGescheiden: Gescheiden\r\n'Weduwe of weduwnaar': 'Weduwe of weduwnaar'\n"

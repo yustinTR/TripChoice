@@ -1,0 +1,17 @@
+uuid: 59e7616e-e8fd-4d20-aafb-be476648f827
+langcode: nl
+status: true
+dependencies:
+  module:
+    - focal_point
+name: portrait_xl
+label: 'portrait extra large'
+effects:
+  171e1563-1746-40a8-8257-aba980d6ac08:
+    uuid: 171e1563-1746-40a8-8257-aba980d6ac08
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 864
+      height: 1080
+      crop_type: focal_point

@@ -1,0 +1,10 @@
+.header {
+  padding-bottom: 40px;
+  padding-top: 30px;
+
+  &__logo {
+    &-img {
+      max-width: 100%;
+    }
+  }
+}

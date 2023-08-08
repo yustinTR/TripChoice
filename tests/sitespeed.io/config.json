@@ -1,0 +1,119 @@
+{
+  "multi": false,
+  "axe": {
+    "enable": true,
+    "disableOtherRules": true,
+    "rules": [
+      {"id": "area-alt"},
+      {"id": "aria-allowed-attr"},
+      {"id": "aria-command-name"},
+      {"id": "aria-hidden-body"},
+      {"id": "aria-hidden-focus"},
+      {"id": "aria-input-field-name"},
+      {"id": "aria-meter-name"},
+      {"id": "aria-progressbar-name"},
+      {"id": "aria-required-attr"},
+      {"id": "aria-required-children"},
+      {"id": "aria-required-parent"},
+      {"id": "aria-roledescription"},
+      {"id": "aria-roles"},
+      {"id": "aria-toggle-field-name"},
+      {"id": "aria-tooltip-name"},
+      {"id": "aria-valid-attr"},
+      {"id": "aria-valid-attr-value"},
+      {"id": "audio-caption"},
+      {"id": "autocomplete-valid"},
+      {"id": "avoid-inline-spacing"},
+      {"id": "blink"},
+      {"id": "button-name"},
+      {"id": "bypass"},
+      {"id": "color-contrast"},
+      {"id": "css-orientation-lock"},
+      {"id": "definition-list"},
+      {"id": "dlitem"},
+      {"id": "document-title"},
+      {"id": "duplicate-id"},
+      {"id": "duplicate-id-active"},
+      {"id": "duplicate-id-aria"},
+      {"id": "empty-table-header"},
+      {"id": "form-field-multiple-labels"},
+      {"id": "frame-focusable-content"},
+      {"id": "frame-title"},
+      {"id": "html-has-lang"},
+      {"id": "html-lang-valid"},
+      {"id": "html-xml-lang-mismatch"},
+      {"id": "identical-links-same-purpose"},
+      {"id": "image-alt"},
+      {"id": "input-button-name"},
+      {"id": "input-image-alt"},
+      {"id": "label"},
+      {"id": "label-content-name-mismatch"},
+      {"id": "link-in-text-block"},
+      {"id": "link-name"},
+      {"id": "list"},
+      {"id": "listitem"},
+      {"id": "marquee"},
+      {"id": "meta-refresh"},
+      {"id": "nested-interactive"},
+      {"id": "no-autoplay-audio"},
+      {"id": "object-alt"},
+      {"id": "p-as-heading"},
+      {"id": "role-img-alt"},
+      {"id": "scrollable-region-focusable"},
+      {"id": "select-name"},
+      {"id": "server-side-image-map"},
+      {"id": "svg-img-alt"},
+      {"id": "table-fake-caption"},
+      {"id": "td-has-header"},
+      {"id": "td-headers-attr"},
+      {"id": "th-has-data-cells"},
+      {"id": "valid-lang"},
+      {"id": "video-caption"}
+    ]
+  },
+  "budget": {
+    "configPath": "budget.json",
+    "output": "junit"
+  },
+  "screenshot": {
+    "type": "jpg"
+  },
+  "filmstrip": {
+    "showAll": false
+  },
+  "browsertime": {
+    "iterations": 1,
+    "browser": "chrome",
+    "basicAuth": "klant@KlantLogin",
+    "visualMetrics": true,
+    "video": false
+  },
+  "html": {
+    "showScript": true,
+    "summaryBoxes": [
+      "timings.SpeedIndex",
+      "timings.fullyLoaded",
+      "axe.critical",
+      "axe.serious",
+      "axe.moderate",
+      "axe.minor",
+      "score.bestpractice",
+      "score.privacy",
+      "score.performance"
+    ],
+    "pageSummaryMetrics": [
+      "timings.SpeedIndex",
+      "timings.fullyLoaded",
+      "axe.critical",
+      "axe.serious",
+      "axe.moderate",
+      "axe.minor",
+      "score.bestpractice",
+      "score.privacy",
+      "score.performance"
+    ]
+  },
+  "metrics": {
+    "filter": []
+  }
+}

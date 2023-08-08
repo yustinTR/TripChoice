@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## Description: Run behat tests
+## Usage: behat <feature-file>
+## Example: "ddev behat features/smoketest.feature"
+
+cd /var/www/html/tests/behat || exit
+../../bin/behat -vv -p ddev $@

@@ -1,0 +1,27 @@
+uuid: a258d1d7-94a6-4e88-b60d-a3de8c327151
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.faq
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: bXFVhknfJRzXm6ZlqyXBgDYoGFZv7qafOSkBbHf50H0
+id: node.faq.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: faq
+label: Antwoord
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+field_type: entity_reference_revisions

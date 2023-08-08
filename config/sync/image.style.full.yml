@@ -1,0 +1,7 @@
+uuid: 116f2c17-49ed-47f0-8a6c-a488d3844aae
+langcode: nl
+status: true
+dependencies: {  }
+name: full
+label: 'volledige afbleeding'
+effects: {  }

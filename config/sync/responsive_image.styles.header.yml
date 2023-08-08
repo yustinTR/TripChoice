@@ -1,0 +1,40 @@
+uuid: 8a68370d-c444-41bc-946a-09d95b77bcb4
+langcode: nl
+status: true
+dependencies:
+  config:
+    - image.style.header_l
+    - image.style.header_m
+    - image.style.header_s
+    - image.style.header_xl
+    - image.style.header_xxl
+id: header
+label: Header
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: header_xxl
+    breakpoint_id: tripchoice.extra_extra_large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: header_xl
+    breakpoint_id: tripchoice.extra_large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: header_l
+    breakpoint_id: tripchoice.large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: header_m
+    breakpoint_id: tripchoice.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: header_s
+    breakpoint_id: tripchoice.small
+    multiplier: 1x
+breakpoint_group: Bootstrap
+fallback_image_style: header_xl

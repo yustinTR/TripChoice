@@ -1,0 +1,21 @@
+uuid: b10be78a-b899-4cae-9354-65dcd1e88fde
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.video
+_core:
+  default_config_hash: 00CfEMVnkEl9EYXFqpyEMQCeoQORV_QytiLlw4_Rfd0
+id: paragraph.video.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: video
+label: Titel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

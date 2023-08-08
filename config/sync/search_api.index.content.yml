@@ -1,0 +1,360 @@
+uuid: e88742af-913e-46c0-acd0-f9df3bae1319
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - field.storage.node.field_event_date
+    - field.storage.node.field_event_type
+    - field.storage.node.field_paragraphs
+    - field.storage.paragraph.field_image
+    - field.storage.node.field_introduction
+    - field.storage.node.field_news_type
+    - field.storage.node.field_subject
+    - field.storage.paragraph.field_subject
+    - field.storage.node.field_summary
+    - field.storage.paragraph.field_text
+    - field.storage.paragraph.field_title
+    - search_api.server.solr
+    - core.entity_view_mode.node.search_index
+  module:
+    - search_api_solr
+    - node
+    - paragraphs
+    - taxonomy
+    - scheduler
+    - search_api
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    debug_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+      use_language_undefined_as_fallback_language: false
+      specific_languages:
+        nl: '0'
+      use_universal_collation: false
+_core:
+  default_config_hash: emewaweCoSW6GkLWxm6LTeih_StsSn0NqUpkVZyFTQ8
+id: content
+name: Content
+description: ''
+read_only: false
+field_settings:
+  author:
+    label: 'Metatags » Author'
+    datasource_id: 'entity:node'
+    property_path: 'field_metatags:author'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_metatags
+  changed:
+    label: Gewijzigd
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - node
+  created:
+    label: 'Aangemaakt op'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  description:
+    label: 'Metatags » Beschrijving'
+    datasource_id: 'entity:node'
+    property_path: 'field_metatags:description'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_metatags
+  end_value:
+    label: 'Datum » Einddatumwaarde'
+    datasource_id: 'entity:node'
+    property_path: 'field_event_date:end_value'
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_event_date
+  field_event_date:
+    label: Datum
+    datasource_id: 'entity:node'
+    property_path: field_event_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_event_date
+  field_event_type:
+    label: 'Agenda type'
+    datasource_id: 'entity:node'
+    property_path: field_event_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_event_type
+  field_image:
+    label: 'Paragrafen » Paragraaf » Afbeelding'
+    datasource_id: 'entity:node'
+    property_path: 'field_paragraphs:entity:field_image'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_paragraphs
+        - field.storage.paragraph.field_image
+      module:
+        - paragraphs
+  field_introduction:
+    label: Introductie
+    datasource_id: 'entity:node'
+    property_path: field_introduction
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_introduction
+  field_news_type:
+    label: 'Nieuws type'
+    datasource_id: 'entity:node'
+    property_path: field_news_type
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_news_type
+  field_paragraphs:
+    label: Paragrafen
+    datasource_id: 'entity:node'
+    property_path: field_paragraphs
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_paragraphs
+  field_subject:
+    label: Onderwerp
+    datasource_id: 'entity:node'
+    property_path: field_subject
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_subject
+  field_subject_1:
+    label: 'Paragrafen » Paragraaf » Onderwerp'
+    datasource_id: 'entity:node'
+    property_path: 'field_paragraphs:entity:field_subject'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_paragraphs
+        - field.storage.paragraph.field_subject
+      module:
+        - paragraphs
+  field_subject_name:
+    label: 'Onderwerp » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_subject:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_subject
+      module:
+        - taxonomy
+  field_summary:
+    label: Samenvatting
+    datasource_id: 'entity:node'
+    property_path: field_summary
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_summary
+  field_text:
+    label: 'Paragrafen » Paragraaf » Caption'
+    datasource_id: 'entity:node'
+    property_path: 'field_paragraphs:entity:field_text'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_paragraphs
+        - field.storage.paragraph.field_text
+      module:
+        - paragraphs
+  field_title:
+    label: 'Paragrafen » Paragraaf » Titel'
+    datasource_id: 'entity:node'
+    property_path: 'field_paragraphs:entity:field_title'
+    type: text
+    boost: 3.0
+    dependencies:
+      config:
+        - field.storage.node.field_paragraphs
+        - field.storage.paragraph.field_title
+      module:
+        - paragraphs
+  parent_field_name:
+    label: 'Paragrafen » Paragraaf » Bovenliggende veldnaam'
+    datasource_id: 'entity:node'
+    property_path: 'field_paragraphs:entity:parent_field_name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_paragraphs
+      module:
+        - paragraphs
+  publish_on:
+    label: 'Publish on'
+    datasource_id: 'entity:node'
+    property_path: publish_on
+    type: date
+    dependencies:
+      module:
+        - scheduler
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        - anonymous
+      view_mode:
+        'entity:node':
+          agenda_item: search_index
+          faq: search_index
+          news: search_index
+          page: search_index
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  title:
+    label: Titel
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  title_full_text:
+    label: 'Titel (full text)'
+    datasource_id: 'entity:node'
+    property_path: title
+    type: 'solr_text_custom:edge'
+    boost: 8.0
+    dependencies:
+      module:
+        - node
+  type:
+    label: Inhoudstype
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  entity_status: {  }
+  entity_type: {  }
+  html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+    all_fields: true
+    fields:
+      - author
+      - description
+      - field_image
+      - field_introduction
+      - field_news_type
+      - field_subject
+      - field_subject_1
+      - field_subject_name
+      - field_summary
+      - field_text
+      - field_title
+      - parent_field_name
+      - rendered_item
+      - title
+      - title_full_text
+      - type
+    title: true
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 8
+      h2: 5
+      h3: 3
+      i: 1
+      strong: 2
+      u: 1
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+  type_boost:
+    weights:
+      preprocess_index: 0
+    boosts:
+      'entity:node':
+        datasource_boost: 1.0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: solr

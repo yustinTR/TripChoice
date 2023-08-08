@@ -1,0 +1,12 @@
+uuid: 7d46ff13-3633-4da9-888c-bc2f07dfc282
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tDpLsPXEQo7IQo4oAuzZfesj-Z7qSbJI3iF430SOp3A
+id: embed
+label: Embed
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,110 @@
+uuid: 41550563-063a-4a72-9be3-501bd2c7d5b9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.embed
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - node.type.events
+    - node.type.faq
+    - node.type.news
+    - node.type.page
+    - taxonomy.vocabulary.event_type
+    - taxonomy.vocabulary.news_type
+    - taxonomy.vocabulary.subject
+    - taxonomy.vocabulary.tags
+  module:
+    - file
+    - filter
+    - media
+    - menu_admin_per_menu
+    - node
+    - paragraphs
+    - paragraphs_type_permissions
+    - rabbit_hole
+    - scheduler
+    - system
+    - taxonomy
+    - toolbar
+_core:
+  default_config_hash: CkOEfer6m9AG7dgcKVBP2Dq-0MQVQzlkOnFX7rEoGAw
+id: editor
+label: Redacteur
+weight: -8
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access site in maintenance mode'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer footer menu items'
+  - 'administer main menu items'
+  - 'create document media'
+  - 'create events content'
+  - 'create faq content'
+  - 'create image media'
+  - 'create media'
+  - 'create news content'
+  - 'create page content'
+  - 'create paragraph content faq'
+  - 'create paragraph content image'
+  - 'create paragraph content quote'
+  - 'create paragraph content text_with_image'
+  - 'create remote_video media'
+  - 'create terms in event_type'
+  - 'create terms in news_type'
+  - 'create terms in subject'
+  - 'create terms in tags'
+  - 'delete media'
+  - 'delete own document media'
+  - 'delete own events content'
+  - 'delete own faq content'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own remote_video media'
+  - 'delete paragraph content faq'
+  - 'delete paragraph content image'
+  - 'delete paragraph content quote'
+  - 'delete paragraph content text_with_image'
+  - 'delete terms in event_type'
+  - 'delete terms in news_type'
+  - 'delete terms in subject'
+  - 'delete terms in tags'
+  - 'edit own events content'
+  - 'edit own faq content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit terms in event_type'
+  - 'edit terms in news_type'
+  - 'edit terms in subject'
+  - 'edit terms in tags'
+  - 'rabbit hole bypass node'
+  - 'schedule publishing of media'
+  - 'schedule publishing of nodes'
+  - 'schedule publishing of taxonomy_term'
+  - 'update media'
+  - 'update paragraph content faq'
+  - 'update paragraph content image'
+  - 'update paragraph content quote'
+  - 'update paragraph content text_with_image'
+  - 'use text format basic_html'
+  - 'use text format embed'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view paragraph content faq'
+  - 'view paragraph content image'
+  - 'view paragraph content text_with_image'
+  - 'view scheduled content'
+  - 'view scheduled media'
+  - 'view scheduled taxonomy_term'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'
+  - 'view user email addresses'

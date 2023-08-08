@@ -1,0 +1,17 @@
+uuid: aec28ed7-607b-41aa-a92a-d79e3724e5cb
+langcode: nl
+status: true
+dependencies:
+  module:
+    - focal_point
+name: landscape_s
+label: 'Landscape small'
+effects:
+  3809e77b-5820-48ac-b8af-a65723b3d55e:
+    uuid: 3809e77b-5820-48ac-b8af-a65723b3d55e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 270
+      crop_type: focal_point

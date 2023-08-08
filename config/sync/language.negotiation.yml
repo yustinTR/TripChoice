@@ -1,0 +1,12 @@
+_core:
+  default_config_hash: D-tqICHLM_yE98fGtVQUOuCkPGkPN-tmzuO8GWOJ39Q
+langcode: nl
+session:
+  parameter: language
+url:
+  source: path_prefix
+  prefixes:
+    nl: ''
+  domains:
+    nl: ''
+selected_langcode: site_default

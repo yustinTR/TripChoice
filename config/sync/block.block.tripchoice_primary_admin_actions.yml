@@ -1,0 +1,20 @@
+uuid: f88ad1fa-3202-4ffe-8985-02a922521fb8
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - tripchoice
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: tripchoice_primary_admin_actions
+theme: tripchoice
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primaire beheeracties'
+  label_display: '0'
+  provider: core
+visibility: {  }

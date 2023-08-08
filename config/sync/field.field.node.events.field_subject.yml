@@ -1,0 +1,31 @@
+uuid: afc468dc-35b9-457a-94f5-30c95e6a85bf
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subject
+    - node.type.events
+    - taxonomy.vocabulary.subject
+_core:
+  default_config_hash: bXDFNIOADy8eiaIChWPdZWwFf2Z9oI16GxMIYZ1LRag
+id: node.events.field_subject
+field_name: field_subject
+entity_type: node
+bundle: events
+label: Onderwerp
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subject: subject
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

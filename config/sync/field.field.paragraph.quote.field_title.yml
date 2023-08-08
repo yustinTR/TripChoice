@@ -1,0 +1,21 @@
+uuid: 50880305-c53a-40dc-bf16-e75774b0961d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.quote
+_core:
+  default_config_hash: Wr4fwGv71YFzF20mZ2PiVO54kKbPTAxwUnEcyzJxslg
+id: paragraph.quote.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: quote
+label: Titel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,16 @@
+uuid: 4a253035-c60b-4f1b-aca4-c2d2b0ad8149
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: yi2XN70ZwB1fYyfq4PIjlGrGeStrN_qp3tvhdXRoUr0
+id: content
+label: Content
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: -7
+relationships: {  }

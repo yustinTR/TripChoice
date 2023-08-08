@@ -1,0 +1,16 @@
+uuid: 22a76a6f-e93e-414c-8cb0-97b5114ba3ba
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.chief_editor
+  module:
+    - user
+_core:
+  default_config_hash: yDQL1omEtJZ8-5N_fVrrAGSiiNTqnqDdjASH8Utk6as
+id: user_remove_role_action.chief_editor
+label: 'De rol Hoofd Redacteur verwijderen van de geselecteerde gebruikers(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: chief_editor

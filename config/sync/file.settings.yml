@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: c_OUTRXcv17JPeIdl3muEN6VqvE4MUjVLKU0ohivsAE
+langcode: nl
+description:
+  type: textfield
+  length: 128
+icon:
+  directory: core/modules/file/icons
+make_unused_managed_files_temporary: false

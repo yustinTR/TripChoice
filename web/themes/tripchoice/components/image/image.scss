@@ -1,0 +1,22 @@
+.image {
+  img {
+    height: auto;
+    object-fit: cover;
+    object-position: left;
+    width: 100%;
+  }
+
+  figcaption {
+    font-family: var(--default-font);
+  }
+
+  &--float-left {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+
+  &--float-right {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+}

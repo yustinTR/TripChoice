@@ -1,0 +1,12 @@
+uuid: 1208923a-c8da-4d41-a6e7-dde3edb4ede3
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eqnth_UgEZfq3DSplOz3hjTf4y6T9Vc16McsdG889O0
+id: image
+label: Afbeelding
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

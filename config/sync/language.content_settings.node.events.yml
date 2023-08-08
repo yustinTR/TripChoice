@@ -1,0 +1,13 @@
+uuid: 31b27f8f-d62a-43cb-b488-d7009f8d8562
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.events
+_core:
+  default_config_hash: Jfc91Wzy6q0IgtoXtIpZ6HUSI0lTVtqrIc5kr1sjPgo
+id: node.events
+target_entity_type_id: node
+target_bundle: events
+default_langcode: site_default
+language_alterable: false

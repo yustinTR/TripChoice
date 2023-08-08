@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Install or use node packages.
+## Usage: node [flags] [args]
+## Example: "node -v "
+
+source /etc/profile && cd $THEME_FOLDER && node $@

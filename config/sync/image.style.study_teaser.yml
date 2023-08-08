@@ -1,0 +1,17 @@
+uuid: 2ab8e2e3-96de-4791-b14c-f74a4a3fd4bd
+langcode: nl
+status: true
+dependencies:
+  module:
+    - focal_point
+name: study_teaser
+label: 'Opleiding teaser'
+effects:
+  4e29943a-5fa3-4667-914e-721e51ddf4a5:
+    uuid: 4e29943a-5fa3-4667-914e-721e51ddf4a5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 120
+      height: 120
+      crop_type: focal_point

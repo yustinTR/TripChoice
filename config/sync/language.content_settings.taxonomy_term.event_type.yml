@@ -1,0 +1,13 @@
+uuid: d6218764-50da-4b3b-b560-e6a2478a1e1d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.event_type
+_core:
+  default_config_hash: H0LrmtBmRUYPV8Fn6oec4HuDjceHejhPeksAN03wyBI
+id: taxonomy_term.event_type
+target_entity_type_id: taxonomy_term
+target_bundle: event_type
+default_langcode: site_default
+language_alterable: false

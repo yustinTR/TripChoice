@@ -1,0 +1,24 @@
+uuid: 5b31692b-cb30-432e-9860-78a31fe7a057
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.news
+_core:
+  default_config_hash: 13jdpuYLImE4Oa0N6jGgEtOUO8TBrIZ3gMJdTA8D73Y
+id: node.news.promote
+field_name: promote
+entity_type: node
+bundle: news
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

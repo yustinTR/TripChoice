@@ -1,0 +1,21 @@
+uuid: 6f691c4d-592b-415f-be05-f8fabfbba1ac
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_introduction
+    - node.type.events
+_core:
+  default_config_hash: 6gZrnpG-F2v-2SgoTJAKOY6Vr7f9iHpiOe4v-6GVl9g
+id: node.events.field_introduction
+field_name: field_introduction
+entity_type: node
+bundle: events
+label: Introductie
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

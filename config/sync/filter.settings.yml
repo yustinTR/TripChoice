@@ -1,0 +1,5 @@
+_core:
+  default_config_hash: bUXzRR32rzFsm4mVpDGieppNK331vnYx7d9qzc5mSfk
+langcode: nl
+fallback_format: plain_text
+always_show_fallback_choice: false

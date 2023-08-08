@@ -1,0 +1,11 @@
+uuid: 9bd1bee9-3144-43a6-ab01-1fed81a3c226
+langcode: nl
+status: true
+dependencies:
+  config:
+    - image.style.full
+id: full
+label: 'Volledige afbeelding'
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: full

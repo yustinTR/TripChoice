@@ -1,0 +1,14 @@
+uuid: b887c7cd-de4f-4667-914e-f8a3802d5f4a
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: pZJnuQkh9afNML5IcMuKTUC__vmHMFn66Qr5IWtedZ4
+id: months
+label: Maanden
+category: 'Datum en tijd'
+likert: false
+options: "Januari: Januari\r\nFebruari: Februari\r\nMaart: Maart\r\nApril: April\r\nMei: Mei\r\nJuni: Juni\r\nJuli: Juli\r\nAugustus: Augustus\r\nSeptember: September\r\nOktober: Oktober\r\nNovember: November\r\nDecember: December\n"

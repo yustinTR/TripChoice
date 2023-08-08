@@ -1,0 +1,12 @@
+uuid: c77677e0-7263-4e09-87b6-c8303d69da12
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DHAplKH8wHHdHc5IlZqIug4BDo402MuPWJsC4ZYLw3w
+id: text_with_image
+label: 'Tekst (met afbeelding)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

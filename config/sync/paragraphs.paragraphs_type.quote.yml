@@ -1,0 +1,12 @@
+uuid: ff3ed854-61fd-417a-a770-1a15eefd2154
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: U6c8ENU1vSZuiYDOnvj0iYlVr6a8j4CgUVYzV5bVKeQ
+id: quote
+label: Quote
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

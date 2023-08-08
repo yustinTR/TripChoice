@@ -1,0 +1,24 @@
+uuid: 88620457-757a-49c4-8dc6-22709d1fc4e0
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: jS2Gn03w7qehT5p16qt5eoQw0NDnmkvCb7P7hMPgV9A
+id: news
+label: Nieuws
+type: 'canonical_entities:node'
+pattern: 'nieuws/[node:title]'
+selection_criteria:
+  13d0b6b2-9438-4a3f-a17a-8829c8072366:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 13d0b6b2-9438-4a3f-a17a-8829c8072366
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+weight: -9
+relationships: {  }

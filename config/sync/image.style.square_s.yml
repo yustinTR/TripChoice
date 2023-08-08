@@ -1,0 +1,17 @@
+uuid: 62f26dc0-e5dc-4cf8-9a8c-cc4a1333648c
+langcode: nl
+status: true
+dependencies:
+  module:
+    - focal_point
+name: square_s
+label: 'Vierkant small'
+effects:
+  02e9235f-c18b-4987-b5d3-fa6a33ba9f85:
+    uuid: 02e9235f-c18b-4987-b5d3-fa6a33ba9f85
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 256
+      height: 256
+      crop_type: focal_point

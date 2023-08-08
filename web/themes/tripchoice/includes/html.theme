@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * html.theme
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for html.
+ */
+function tripchoice_preprocess_html(&$variables){
+  $enable_button = theme_get_setting('enable_button');
+  $enable_fa = theme_get_setting('enable_fa');
+
+  if (!empty($enable_button)) {
+    $variables['page']['#attached']['library'][] = 'tripchoice/button';
+  }
+  if (!empty($enable_fa)) {
+    $variables['page']['#attached']['library'][] = 'tripchoice/fontawesome';
+  }
+}

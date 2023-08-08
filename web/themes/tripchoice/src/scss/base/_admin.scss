@@ -1,0 +1,105 @@
+// Styling for the local tasks bar
+#block-aventus-primary-local-tasks,
+#tools {
+  bottom: 0;
+  font-size: 13px;
+  left: 50%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: fixed;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  z-index: 100;
+
+  .tabs {
+    background: linear-gradient(
+      to bottom,
+      var(--aventus-gray) 7%,
+      var(--aventus-gray-dh) 100%
+    );
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+
+    ul {
+      border-bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      &:after {
+        clear: both;
+      }
+
+      &:before,
+      &:after {
+        content: ' ';
+        display: table;
+      }
+
+      li {
+        float: left;
+
+        // Styling for link items
+        a {
+          background: inherit;
+          border: 0;
+          border-right: 1px solid var(--aventus-gray-dh);
+          color: var(--aventus-white);
+          display: block;
+          font-size: inherit;
+          padding: 20px 40px;
+          text-decoration: none;
+
+          &:hover {
+            color: var(--aventus-black);
+            transition: 0.5s;
+          }
+        }
+
+        // Styling for link item hover effects
+        &:hover a {
+          background: $white;
+          box-shadow: 0 20px 10px -20px rgb(113 113 116 / 15%) inset;
+          color: var(--aventus-gray-dh);
+          text-shadow: none;
+          transition: 0.5s;
+        }
+
+        &:hover > a {
+          color: var(--aventus-blue);
+          transition: 0.5s;
+        }
+
+        // Styling for first and last link item
+        &:first-child > a {
+          border-top-left-radius: 8px;
+        }
+
+        &:last-child > a {
+          border-right: 0;
+          border-top-right-radius: 8px;
+        }
+      }
+    }
+  }
+
+  // Show the highlight bar at top of page
+  .highlighted {
+    display: block;
+  }
+}
+
+html.paragraphs-previewer-html {
+  background-color: var(--aventus-white);
+}

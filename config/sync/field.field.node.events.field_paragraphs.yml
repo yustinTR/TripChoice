@@ -1,0 +1,58 @@
+uuid: 1743c4d2-11fd-4f32-af40-e6b91b0f5699
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.events
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 9m6K-RhthD9Bc5meIL4KstzBTR1ad2Bl1muJaSnLHPc
+id: node.events.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: events
+label: Paragrafen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      button:
+        weight: 11
+        enabled: false
+      call_to_action:
+        weight: 12
+        enabled: false
+      embed:
+        weight: 13
+        enabled: false
+      faq:
+        weight: 14
+        enabled: false
+      image:
+        weight: 15
+        enabled: false
+      quote:
+        weight: 16
+        enabled: false
+      related_content:
+        weight: 17
+        enabled: false
+      text_with_image:
+        weight: 18
+        enabled: false
+      video:
+        weight: 19
+        enabled: false
+      webform:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

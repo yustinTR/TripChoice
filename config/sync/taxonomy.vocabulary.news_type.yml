@@ -1,0 +1,26 @@
+uuid: fd1b47bc-25c1-4b23-b0ee-674c9f9ae184
+langcode: nl
+status: true
+dependencies:
+  module:
+    - scheduler
+third_party_settings:
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+_core:
+  default_config_hash: WeiZvjvD2ntWXD_YJOCeMD_YVLLOuKsE2XAZ2x38DV4
+name: 'Nieuws type'
+vid: news_type
+description: ''
+weight: -9

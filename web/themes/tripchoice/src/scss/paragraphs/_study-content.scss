@@ -1,0 +1,9 @@
+.study-content {
+  scroll-margin-top: 100px;
+
+  &-title {
+    h1 {
+      color: var(--default-link-color);
+    }
+  }
+}

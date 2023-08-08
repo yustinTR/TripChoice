@@ -1,0 +1,6 @@
+{% if title is not empty %}
+  <{{ element ? element : 'h1' }} class="title{% if style %} title--{{ style|replace({'title-':''})|lower }}{% endif %}">
+    {%- if icon %}<i aria-hidden="true" class="{{ icon }}"></i>{% endif -%}
+    {{ title }}
+  </{{ element ? element : 'h1' }}>
+{% endif %}

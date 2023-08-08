@@ -1,0 +1,40 @@
+uuid: 33d6e002-01b8-4c1d-9c8b-a92e4682a58e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.user.user_picture
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: 7QeWH5Hk0dO_0dSokMajb_Ax1Z5hwvkFpNGrY1f9zlY
+id: user.user.user_picture
+field_name: user_picture
+entity_type: user
+bundle: user
+label: Afbeelding
+description: 'Uw foto of afbeelding.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'pictures/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

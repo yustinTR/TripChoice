@@ -1,0 +1,12 @@
+uuid: cc15d2b6-d6c7-4828-adde-242356921402
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OpsWPF3vIO488Mf7MEu-oe8UONd5B4eULRdUOKHS8Vc
+id: webform
+label: Webform
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

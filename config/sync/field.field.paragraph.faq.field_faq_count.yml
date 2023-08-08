@@ -1,0 +1,25 @@
+uuid: 5d7a6ec8-189f-4c74-9a14-328da2161756
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_faq_count
+    - paragraphs.paragraphs_type.faq
+_core:
+  default_config_hash: HEhRkQiBHHKfDGR7gTSOwWyAQHYzQ4VkbPz4PK1b3fI
+id: paragraph.faq.field_faq_count
+field_name: field_faq_count
+entity_type: paragraph
+bundle: faq
+label: Aantal
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 9999
+  prefix: ''
+  suffix: ''
+field_type: integer

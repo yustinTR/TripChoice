@@ -1,0 +1,24 @@
+uuid: 0746f1a7-ea22-43a5-a6b4-08b94b34aab2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.faq
+_core:
+  default_config_hash: EwPKhfcKtmQoM_TiahNRuT5LCMh0kMaM8Op9hGUVv5Y
+id: node.faq.promote
+field_name: promote
+entity_type: node
+bundle: faq
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

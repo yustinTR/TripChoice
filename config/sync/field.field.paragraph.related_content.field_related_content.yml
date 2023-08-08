@@ -1,0 +1,33 @@
+uuid: 318e3b6d-28fa-474f-93a9-9a6e018b47ad
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_related_content
+    - node.type.news
+    - node.type.page
+    - paragraphs.paragraphs_type.related_content
+_core:
+  default_config_hash: lPTWABmqCosI8_x4f6ug5PkxTD-2U2SWqB7wwZ4TyPY
+id: paragraph.related_content.field_related_content
+field_name: field_related_content
+entity_type: paragraph
+bundle: related_content
+label: Inhoud
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+      page: page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: news
+field_type: entity_reference

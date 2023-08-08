@@ -1,0 +1,13 @@
+uuid: cdc15b9b-47db-40f8-b6b9-04477e41117a
+langcode: nl
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 7rfpzR_bvWFg9-xjTSaKDYT2ETb3sC-nOQ-Sxp-duWU
+id: media_publish_action
+label: 'Publish media'
+type: media
+plugin: 'entity:publish_action:media'
+configuration: {  }

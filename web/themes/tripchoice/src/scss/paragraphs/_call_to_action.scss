@@ -1,0 +1,54 @@
+.cta {
+  color: var(--aventus-white);
+  font-size: var(--default-font-size);
+  line-height: var(--default-line-height);
+  margin: 16px 0;
+
+  &-wrapper {
+    padding: 24px;
+  }
+
+  &-title {
+    display: grid;
+    grid-template-areas: 'title icon';
+    grid-template-columns: auto 40px;
+    margin: 0;
+
+    h2 {
+      grid-area: title;
+    }
+
+    &:after {
+      content: '\f054';
+      font: var(--fa-font-solid);
+      grid-area: icon;
+      text-align: right;
+    }
+  }
+
+  &-description {
+    p {
+      margin: 0;
+    }
+  }
+
+  &--red {
+    background-color: var(--aventus-red);
+    box-shadow: var(--cta-box-shadow) var(--aventus-red);
+  }
+
+  &--green {
+    background-color: var(--aventus-green);
+    box-shadow: var(--cta-box-shadow) var(--aventus-green);
+  }
+
+  &--purple {
+    background-color: var(--aventus-purple);
+    box-shadow: var(--cta-box-shadow) var(--aventus-purple);
+  }
+
+  &--orange {
+    background-color: var(--aventus-orange);
+    box-shadow: var(--cta-box-shadow) var(--aventus-orange);
+  }
+}

@@ -1,0 +1,35 @@
+uuid: f5d4221f-0b7c-4e49-a246-ac95e433419e
+langcode: nl
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: sqM9PQ8meeHNKrj8AwZxb5NOCn7atNZl75ux7zB0U9g
+id: paragraph.field_image_aspect_ratio
+field_name: field_image_aspect_ratio
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: landscape
+      label: Landschap
+    -
+      value: square
+      label: Vierkant
+    -
+      value: portrait
+      label: Portret
+    -
+      value: full
+      label: 'Volledige afbeelding'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

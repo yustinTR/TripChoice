@@ -1,0 +1,20 @@
+uuid: 749465e3-d08d-4d07-8790-81f82a714413
+langcode: nl
+status: false
+dependencies: {  }
+_core:
+  default_config_hash: aLN1L6ZsGO1d0RQhCMrOGLiSjGAeojczcKCRWFql_SU
+id: dev
+label: Development
+description: ''
+weight: 0
+stackable: false
+storage: folder
+folder: ../config/dev
+module:
+  devel: 0
+  field_ui: 0
+  views_ui: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

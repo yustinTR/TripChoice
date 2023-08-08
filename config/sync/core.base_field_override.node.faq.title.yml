@@ -1,0 +1,20 @@
+uuid: 8d0291c0-49ec-4c96-9e92-8e9f476d9b7d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.faq
+_core:
+  default_config_hash: DYIz-0JnXSaR6-iIuNLLTRVq53szeqBw09ZkFqWCBDU
+id: node.faq.title
+field_name: title
+entity_type: node
+bundle: faq
+label: Vraag
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

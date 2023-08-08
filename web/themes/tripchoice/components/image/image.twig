@@ -1,0 +1,34 @@
+{% set classes = [
+  'image',
+  ratio ? 'image--aspect-ratio image--aspect-ratio--' ~ ratio,
+  float ? 'image--float-' ~ float,
+  extra_classes,
+]
+%}
+
+{% set sdc_image_attribute = create_attribute() %}
+
+{% if alt_text %}
+  {% set alt_text = {alt: alt_text} %}
+{% else %}
+  {% set alt_text = {} %}
+{% endif %}
+
+<div {{ sdc_image_attribute.addClass(classes) }} >
+  {% if link %}
+  <a href="{{ link }}">
+    {% endif %}
+
+    {% if responsive_style  %}
+      {{ drupal_image( file, ratio, alt_text, responsive=true ) }}
+    {% else %}
+      {{ drupal_image(file, ratio, alt_text) }}
+    {% endif %}
+
+    {% if caption %}
+      <figcaption>{{ caption }}</figcaption>
+    {% endif%}
+    {% if link %}
+  </a>
+  {% endif %}
+</div>

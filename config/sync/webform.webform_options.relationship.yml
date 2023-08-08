@@ -1,0 +1,14 @@
+uuid: b3059da0-0d25-46f4-95f5-92c97a7e2587
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 4J2RPG4JmsD4Fm1NlIQY0JHkrJ08UUl0qTF0_EjUxvw
+id: relationship
+label: Relatie
+category: Demografisch
+likert: false
+options: "Ouder: Ouder\r\nWederhelft: Wederhelft\r\n'Broer of zus': Broer of zus\r\nKind: Kind\r\nVriend: Vriend\n"

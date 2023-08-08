@@ -1,0 +1,17 @@
+uuid: 48fde69d-f284-4a85-a8e5-1d26c5af5ac2
+langcode: nl
+status: true
+dependencies:
+  module:
+    - focal_point
+name: header_s
+label: 'Header small'
+effects:
+  67635c95-b86e-4103-a2a9-eeaf95286dc2:
+    uuid: 67635c95-b86e-4103-a2a9-eeaf95286dc2
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 200
+      crop_type: focal_point

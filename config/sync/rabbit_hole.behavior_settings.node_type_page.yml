@@ -1,0 +1,16 @@
+uuid: 7070c8c6-7b37-482d-8619-fc8830464e7c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.page
+_core:
+  default_config_hash: yGbpgT-1VlbkMLcN1ygr4rkxyZKsZvQtQD8IsX3QIe4
+id: node_type_page
+entity_type_id: node_type
+entity_id: page
+action: display_page
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

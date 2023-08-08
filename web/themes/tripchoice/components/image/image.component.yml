@@ -1,0 +1,47 @@
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+name: Image
+status: stable
+description: This component produces a image
+libraryDependencies:
+  - cog/fontawesome
+props:
+  type: object
+  required:
+    - file
+  properties:
+    responsive_style:
+      type: boolean
+      title: responsive image style
+      default: false
+    file:
+      type: string
+      title: image file
+      examples:
+        - node.field_header_image.entity.field_media_image.target_id
+    alt_text:
+      type: string
+      title: Alt Text
+      examples:
+        - node.field_header_image.entity.field_media_image.alt
+    ratio:
+      type: string
+      title: image ratio
+    link:
+      type: string
+      title: link
+    caption:
+      type: string
+      title: image caption
+    extra_classes:
+      type: string
+      title: Extra classes
+      examples:
+        - col-md-6 custom-class another-class
+    float:
+      type: string
+      title: Float direction
+libraryOverrides:
+  css:
+    component:
+      ../../dist/components/image/image.css: { }
+

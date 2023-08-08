@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Run phpcs checks on code
+## Usage: phpcs
+## Example: "ddev phpcs path/to/module/folder" or "ddev phpcs /path/to/module/folder -a"
+
+bin/phpcs --standard=./web/core/phpcs.xml.dist --ignore=vendor --colors $@

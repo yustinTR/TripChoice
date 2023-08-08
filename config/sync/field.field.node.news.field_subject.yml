@@ -1,0 +1,31 @@
+uuid: 3d9573db-0129-4000-a089-efffc2f50aac
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subject
+    - node.type.news
+    - taxonomy.vocabulary.subject
+_core:
+  default_config_hash: 41w9mXBTNigp-tvGsBZ0RzKi9MV_gpmfwHzXCGRdNak
+id: node.news.field_subject
+field_name: field_subject
+entity_type: node
+bundle: news
+label: Onderwerp
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subject: subject
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

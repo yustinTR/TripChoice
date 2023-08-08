@@ -1,0 +1,34 @@
+uuid: 3f92163f-e32f-4b3e-9b49-fbd3bd07504d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embed.field_embed
+    - field.field.paragraph.embed.field_title
+    - paragraphs.paragraphs_type.embed
+  module:
+    - text
+_core:
+  default_config_hash: uhBxcXyuLQ12IuffCiw2Jt1cIIcW1SJnG87edG3sTMc
+id: paragraph.embed.default
+targetEntityType: paragraph
+bundle: embed
+mode: default
+content:
+  field_embed:
+    type: text_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

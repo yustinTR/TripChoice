@@ -1,0 +1,29 @@
+uuid: d53e05d0-ffe4-4221-919f-b4d830ace17d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embed
+    - paragraphs.paragraphs_type.embed
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - embed
+_core:
+  default_config_hash: omxxfpy2dYBGzU8mTkY0zwV6rTTm9oBB9qk_PvzUR8I
+id: paragraph.embed.field_embed
+field_name: field_embed
+entity_type: paragraph
+bundle: embed
+label: Embed
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

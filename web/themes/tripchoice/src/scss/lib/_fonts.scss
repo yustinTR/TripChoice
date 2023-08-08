@@ -1,0 +1,40 @@
+// The Mix Bold Plain (free font).
+@font-face {
+  font-family: 'the_mix_bold-bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/themix_bold_plain-webfont.eot');
+  src: url('../fonts/themix_bold_plain-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/themix_bold_plain-webfont.woff2') format('woff2'),
+    url('../fonts/themix_bold_plain-webfont.woff') format('woff'),
+    url('../fonts/themix_bold_plain-webfont.ttf') format('truetype'),
+    url('../fonts/themix_bold_plain-webfont.svg#the_mix_bold-bold')
+      format('svg');
+}
+
+// The Mix Plain/
+@font-face {
+  font-family: TheMix-Plain;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/TheMix-Plain.eot');
+  src: url('../fonts/TheMix-Plain.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TheMix-Plain.woff2') format('woff2'),
+    url('../fonts/TheMix-Plain.woff') format('woff'),
+    url('../fonts/TheMix-Plain.ttf') format('truetype'),
+    url('../fonts/TheMix-Plain.svg#TheMix-Plain') format('svg');
+}
+
+// SUNN (free font).
+@font-face {
+  font-family: Sunn;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/sunn-webfont.eot');
+  src: url('../fonts/sunn-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sunn-webfont.woff2') format('woff2'),
+    url('../fonts/sunn-webfont.woff') format('woff'),
+    url('../fonts/sunn-webfont.ttf') format('truetype'),
+    url('../fonts/sunn-webfont.svg#sunn') format('svg');
+}

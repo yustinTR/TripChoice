@@ -1,0 +1,10 @@
+uuid: 6b46c417-0f34-4a69-9b2d-f4b4c1883a53
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: H-Iw0JwmkI6id5-S42iVaAFEval3BtR767pg8o8_j1Q
+name: Embed
+format: embed
+weight: 0
+filters: {  }

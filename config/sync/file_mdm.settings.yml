@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: K8qzqTDD3vp4Y69e6EfkaBOvE6iKM6QVoMpBtaZ98nc
+langcode: nl
+metadata_cache:
+  enabled: true
+  expiration: 172800
+  disallowed_paths: {  }

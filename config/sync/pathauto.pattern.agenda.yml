@@ -1,0 +1,24 @@
+uuid: 23591a7c-415c-4ea6-91e3-bf26d59560c5
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Q2gtw2x1oTsSchNq-TGLWCcnzNNKnEblHeACsdf5bpw
+id: agenda
+label: Agenda
+type: 'canonical_entities:node'
+pattern: 'agenda/[node:title]'
+selection_criteria:
+  57091660-20db-45ad-ae70-9c938c734991:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 57091660-20db-45ad-ae70-9c938c734991
+    context_mapping:
+      node: node
+    bundles:
+      agenda_item: agenda_item
+selection_logic: and
+weight: -10
+relationships: {  }

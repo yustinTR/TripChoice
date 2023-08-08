@@ -1,0 +1,32 @@
+{% set classes = [
+  'teaser',
+  extra_classes,
+] %}
+{% if link %}
+<a href="{{ link }}">
+    {% endif %}
+  <article{{ attributes.addClass(classes) }}>
+    <div class="teaser-image">
+      {% include 'tripchoice:image' with {
+        'file': teaser_image,
+        'ratio': image_ratio,
+        'responsive_style': image_responsive_style,
+      } %}
+    </div>
+    <div class="teaser-info">
+      {% include 'tripchoice:title' with {
+        'element': 'h2',
+        'title': title,
+      } %}
+      <div class="teaser-content">
+        <p>{{ intro }}</p>
+        {{ breakpoint(link) }}
+        {% if link %}
+         <a href="{{ link }}" class="teaser-link">{{ 'Read more'|t }}<i class="fa-solid fa-angle-right"></i></a>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+  {% if link %}
+</a>
+{% endif %}

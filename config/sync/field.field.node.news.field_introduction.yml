@@ -1,0 +1,21 @@
+uuid: ce9cf061-05c6-4f77-b460-79811d49f829
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_introduction
+    - node.type.news
+_core:
+  default_config_hash: wU4MoyKim0iYY_-jZVSL_9TXABdaKtDR0XK09TWnzPg
+id: node.news.field_introduction
+field_name: field_introduction
+entity_type: node
+bundle: news
+label: Introductie
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

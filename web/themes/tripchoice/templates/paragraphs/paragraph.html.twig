@@ -1,0 +1,13 @@
+{%
+  set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished',
+  paragraph.field_separator_style.value ? paragraph.field_separator_style.value,
+] | sort | join(' ') | trim %}
+
+<div class="{{ classes }}">
+  {% block paragraph_content %}
+    {{ content }}
+  {% endblock %}
+</div>

@@ -1,0 +1,29 @@
+uuid: e518e404-662a-4088-a9a8-9b6d9e5c1802
+langcode: nl
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: q4lJ_ZKJVK4Ad5DrZbEX-IYkSzTr0IkQfJF--eTWmO8
+id: paragraph.field_image_alignment
+field_name: field_image_alignment
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: left
+      label: Links
+    -
+      value: right
+      label: Rechts
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

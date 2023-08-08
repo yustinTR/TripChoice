@@ -1,0 +1,39 @@
+uuid: f38bf592-fee7-4f99-84a5-43cd851ffaa8
+langcode: nl
+status: true
+dependencies:
+  config:
+    - image.style.landscape_l
+    - image.style.landscape_m
+    - image.style.landscape_s
+    - image.style.landscape_xl
+id: landscape
+label: Landscape
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: landscape_xl
+    breakpoint_id: tripchoice.extra_extra_large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: landscape_xl
+    breakpoint_id: tripchoice.extra_large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: landscape_l
+    breakpoint_id: tripchoice.large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: landscape_m
+    breakpoint_id: tripchoice.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: landscape_s
+    breakpoint_id: tripchoice.small
+    multiplier: 1x
+breakpoint_group: Bootstrap
+fallback_image_style: landscape_xl

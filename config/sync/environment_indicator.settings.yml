@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: AeP2OhS-gWv-yDkBWglN0EnZePsuZgrBob2Bv35l6cw
+langcode: nl
+toolbar_integration:
+  - toolbar
+favicon: true

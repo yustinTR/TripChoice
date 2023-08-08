@@ -1,0 +1,21 @@
+uuid: 795b1cc3-08e1-4100-a4e9-e94d42e5fffc
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.embed
+_core:
+  default_config_hash: ViBhO4ywjKChncwAUAF4XOYu1sTLBFasRxio5Y2I2NM
+id: paragraph.embed.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: embed
+label: Titel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: b8699d33-18fc-4109-aa57-f3ccb5f19ee9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.news
+_core:
+  default_config_hash: T8QueKJaGuCXe51gE12rpibFJp5HszdR3HNxFFx7Cgk
+id: node.news.field_summary
+field_name: field_summary
+entity_type: node
+bundle: news
+label: Samenvatting
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

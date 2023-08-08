@@ -1,0 +1,16 @@
+uuid: 1598f795-ada3-44d5-bdd8-09c547c7de7b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.news
+_core:
+  default_config_hash: HoQEaFhwrv9hKOqFLakYrOqRdjQvlM_mGiA65WbdQ8k
+id: node_type_news
+entity_type_id: node_type
+entity_id: news
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,16 @@
+uuid: 500bbd88-280d-462b-86d8-607898f0477f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.chief_editor
+  module:
+    - user
+_core:
+  default_config_hash: H5ZF_XzWecDwI9JUXS0KnZCIRf2KTynCGqlqtZupo4s
+id: user_add_role_action.chief_editor
+label: 'De rol Hoofd Redacteur toewijzen aan de geselecteerde gebruiker(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: chief_editor

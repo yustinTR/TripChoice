@@ -1,0 +1,40 @@
+:root {
+  // Basic colors.
+  --aventus-purple: #2e2751;
+  --aventus-blue: #50bcce;
+  --aventus-lightblue: #e3eaec;
+  --aventus-green: #c5cd2d;
+  --aventus-red: #d2232a;
+  --aventus-orange: #e97300;
+  --aventus-yellow: #f1ea0c;
+  --aventus-black: #404040;
+  --aventus-white: #ffffff;
+  --aventus-lighter-gray: #eff1f1;
+  --aventus-light-gray: #aeaeae;
+  --aventus-gray: #3c3c3b;
+  --aventus-gray-dh: #525252;
+  --gray-bg: #e3e3e3;
+  --aventus-dark-gray: #3a3a39;
+
+  // Default colors
+  --default-text-color: var(--aventus-black);
+  --default-link-color: #7464ac;
+  --default-hover-color: var(--aventus-blue);
+
+  // Service menu
+  --servicemenu-color: #aeaeae;
+  --servicemenu-link-color: #5a5a5a;
+
+  // Hamburger menu
+  --hamburger-seperator-color: #8e8e8e;
+
+  // Search
+  --search-text-color: #000000;
+  --search-placeholder-color: #b2b2b2;
+  --search-autocomplete-border-color: #aeaeae;
+
+  // Box-shadows
+  --cta-box-shadow: 5px 5px 0 0 rgb(113 113 116 / 40%), inset 0 0 0 1px;
+  --teaser-box-shadow: 4px 4px 0 0 rgb(113 113 116 / 15%),
+    inset 0 0 0 1px var(--aventus-light-gray);
+}

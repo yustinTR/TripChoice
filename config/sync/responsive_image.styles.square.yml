@@ -1,0 +1,40 @@
+uuid: da893fcc-f1a4-4314-a1af-7e621c95dc1d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - image.style.square_l
+    - image.style.square_m
+    - image.style.square_s
+    - image.style.square_xl
+    - image.style.square_xxl
+id: square
+label: Vierkant
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: square_xxl
+    breakpoint_id: tripchoice.extra_extra_large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: square_xl
+    breakpoint_id: tripchoice.extra_large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: square_l
+    breakpoint_id: tripchoice.large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: square_m
+    breakpoint_id: tripchoice.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: square_s
+    breakpoint_id: tripchoice.small
+    multiplier: 1x
+breakpoint_group: Bootstrap
+fallback_image_style: square_xl

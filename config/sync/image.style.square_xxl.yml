@@ -1,0 +1,17 @@
+uuid: ede113b3-d289-42ca-b974-a2aa369ca7ec
+langcode: nl
+status: true
+dependencies:
+  module:
+    - focal_point
+name: square_xxl
+label: 'Vierkant extra extra large'
+effects:
+  faeffdea-871d-44b6-8969-f0ba2fb7b005:
+    uuid: faeffdea-871d-44b6-8969-f0ba2fb7b005
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1280
+      height: 1280
+      crop_type: focal_point

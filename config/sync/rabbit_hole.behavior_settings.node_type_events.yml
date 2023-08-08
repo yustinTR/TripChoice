@@ -1,0 +1,16 @@
+uuid: 0028e1e3-007b-47ab-b417-9b13c10e489d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.events
+_core:
+  default_config_hash: mAZwgALloYUmY95fcoK0WDo01fTg5wtzKofa9zngX0U
+id: node_type_events
+entity_type_id: node_type
+entity_id: events
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

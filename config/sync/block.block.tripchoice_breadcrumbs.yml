@@ -1,0 +1,22 @@
+uuid: 3cdbb060-01d3-44e5-b7dd-015532ffe592
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tripchoice
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: tripchoice_breadcrumbs
+theme: tripchoice
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Kruimelpad
+  label_display: '0'
+  provider: system
+visibility: {  }

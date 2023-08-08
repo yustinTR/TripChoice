@@ -1,0 +1,21 @@
+uuid: e0c7e290-b102-49d8-ac1f-3525a639e79e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.page
+_core:
+  default_config_hash: AmFl9zpTKL06m8vezjitooHuxPSZRlMGlZrROQ-AmnQ
+id: node.page.field_summary
+field_name: field_summary
+entity_type: node
+bundle: page
+label: Samenvatting
+description: 'Maak in dit veld een beknopte samenvatting van de inhoud van de pagina deze wordt ook gebruikt als metabeschrijving in zoekmachineresultaten. Zorg ervoor dat de tekst relevant is en de belangrijkste informatie van de pagina bevat, maar houd het kort en krachtig (maximaal 155-160 tekens).'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

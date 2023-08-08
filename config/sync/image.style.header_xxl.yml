@@ -1,0 +1,17 @@
+uuid: 87ddba5b-8d34-428e-b5dc-651ef77e2f41
+langcode: nl
+status: true
+dependencies:
+  module:
+    - focal_point
+name: header_xxl
+label: 'Header extra extra large'
+effects:
+  bd19f8a7-201d-4674-9ee3-bfc0491c8b39:
+    uuid: bd19f8a7-201d-4674-9ee3-bfc0491c8b39
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 3000
+      height: 750
+      crop_type: focal_point

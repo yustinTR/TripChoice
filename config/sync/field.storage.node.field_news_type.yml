@@ -1,0 +1,22 @@
+uuid: 3cf254a2-d0ff-4cf8-93e8-8bd4014fa053
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: ApvlJ6a5JOQ6NWJ8zxghx-9QFjl2ArbBlZ1e37s4Z6M
+id: node.field_news_type
+field_name: field_news_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,31 @@
+uuid: 06f3784d-e957-44ee-85af-c60aae5f43e1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - facets.facet.news_type
+  module:
+    - facets
+    - system
+  theme:
+    - tripchoice
+_core:
+  default_config_hash: H0QcvPZRt35qz9Yn5LxR20RxSNXUufS6Mpk8_GBdFOQ
+id: tripchoice_facet_news_type
+theme: tripchoice
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:news_type'
+settings:
+  id: 'facet_block:news_type'
+  label: 'Nieuws type'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: facet_news_type
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /nieuws

@@ -1,0 +1,10 @@
+uuid: 8ca6dfb8-ee5c-415d-8343-58d0e93dc31a
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: q-SB2T45Ka0afsFIy0e-K60lWxMiKU9A7HpSL2U3rCM
+name: Onderwerp
+vid: subject
+description: ''
+weight: -7

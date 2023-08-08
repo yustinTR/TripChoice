@@ -1,0 +1,12 @@
+uuid: 00de25f6-1365-4bf6-a3a4-2ed55f680d12
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: K3vC_k9RkNP7bhJAEN2hnRMnnZvgixhdmxTEu3TuOt0
+id: faq
+label: FAQ
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

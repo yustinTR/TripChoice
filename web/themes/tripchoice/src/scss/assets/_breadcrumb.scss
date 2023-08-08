@@ -1,0 +1,31 @@
+#block-aventus-breadcrumbs {
+  color: var(--aventus-purple);
+  margin: 2rem 0 0;
+
+  a {
+    color: var(--aventus-purple);
+    font-weight: bold;
+  }
+
+  ol {
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      &:before {
+        content: '\f054';
+        font: var(--fa-font-solid);
+        font-size: 12px;
+        margin-right: 0;
+        padding: 0 5px;
+      }
+
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

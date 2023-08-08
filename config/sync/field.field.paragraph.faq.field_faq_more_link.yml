@@ -1,0 +1,25 @@
+uuid: 5b4e952b-951b-4452-8222-013e88c5e849
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_faq_more_link
+    - paragraphs.paragraphs_type.faq
+_core:
+  default_config_hash: V9FwEN_f5c9CFgbhezUAG5qXGpwdmmqMG7Eou1nBygg
+id: paragraph.faq.field_faq_more_link
+field_name: field_faq_more_link
+entity_type: paragraph
+bundle: faq
+label: 'Toon meer link'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

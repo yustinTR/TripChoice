@@ -1,0 +1,38 @@
+uuid: 9d111d1f-b0e7-4c05-8bba-21d6d0e2c0c4
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_type
+    - field.field.node.events.field_introduction
+    - field.field.node.events.field_metatags
+    - field.field.node.events.field_paragraphs
+    - field.field.node.events.field_subject
+    - field.field.node.events.field_summary
+    - node.type.events
+  module:
+    - user
+_core:
+  default_config_hash: 3Oa1fnC2O_mIKKQGiQmty1qBbAPPkq5zcOIPC8St5-k
+id: node.events.teaser
+targetEntityType: node
+bundle: events
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_event_date: true
+  field_event_type: true
+  field_introduction: true
+  field_metatags: true
+  field_paragraphs: true
+  field_subject: true
+  field_summary: true
+  langcode: true
+  search_api_excerpt: true

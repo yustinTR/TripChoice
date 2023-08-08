@@ -1,0 +1,22 @@
+uuid: c5e8ac6a-5b08-4933-9e3f-96e6459a9798
+langcode: nl
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: ww6gQg5ooQrDC8s8z0lOaPeTgesCMO7Uvxhri-IKi4k
+id: paragraph.field_faq_count
+field_name: field_faq_count
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

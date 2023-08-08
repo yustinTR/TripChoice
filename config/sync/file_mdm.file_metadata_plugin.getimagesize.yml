@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: CflutGee2Nl8KZmJXjlctNbY-ZVD1hSFJO-5-0OCyig
+langcode: nl
+configuration:
+  cache:
+    override: false
+    settings:
+      enabled: true
+      expiration: 172800
+      disallowed_paths: {  }

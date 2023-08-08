@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Template for paragraph-embed.
+ *
+ * Available input variables:
+ * - content.field_title: text (will be used in extended template)
+ * - content.field_embed: raw text
+ */
+#}
+
+{% extends '@aventus/templates/paragraphs/paragraph.html.twig' %}
+
+{% block paragraph_content %}
+  <div class="paragraph-content embed">
+    <div class="embed-title">
+      {% include 'aventus:title' with {
+        'element': 'h2',
+        'title': paragraph.field_title.value,
+      } %}
+    </div>
+    <div class="embed-code">
+    {% if paragraph.field_embed.value %}
+      {{ paragraph.field_embed.value|raw }}
+    {% endif %}
+    </div>
+  </div>
+{% endblock %}

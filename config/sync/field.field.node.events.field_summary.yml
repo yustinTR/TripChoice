@@ -1,0 +1,21 @@
+uuid: 7239c825-09df-4ffe-8112-c803d9f76c0a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.events
+_core:
+  default_config_hash: mcQ-fzkszwO0-FInuMGgVJkt96x9-e0XhEeIXWcjsM4
+id: node.events.field_summary
+field_name: field_summary
+entity_type: node
+bundle: events
+label: Samenvatting
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

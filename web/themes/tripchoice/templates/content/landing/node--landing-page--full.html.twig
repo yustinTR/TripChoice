@@ -1,0 +1,27 @@
+{% set sidebar = drupal_region('sidebar') %}
+<div class="landings-page">
+  {% include 'aventus:header' with{
+    'content_type':'landing',
+    'header_blocks': true,
+    'header_links': content.field_header_links ,
+  } %}
+  {% if is_front %}
+    <article class="row">
+      <section class="student-quotes col-12">
+      {{ drupal_block('views_block:student_qoute-block_1') }}
+      </section>
+    </article>
+  {% endif %}
+  <article class="row">
+    <section class="content col-12 {% if sidebar['#region'] %} col-md-8   {% endif %}">
+      <h1>{{ node.title.value }}</h1>
+      {{ content.field_paragraphs }}
+    </section>
+
+    {% if sidebar['#region'] %}
+      <aside class="sidebar col-12 col-md-4">
+        {{ sidebar }}
+      </aside>
+    {% endif %}
+  </article>
+</div>

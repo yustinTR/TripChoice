@@ -1,0 +1,130 @@
+.footer {
+  background: var(--aventus-lightblue);
+  margin: 0;
+  margin-top: 30px;
+  padding-top: 1rem;
+  width: 100%;
+
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .social-links {
+      display: flex;
+      flex-direction: revert;
+      margin: 0;
+
+      li {
+        list-style: none;
+        margin: 0 5px;
+
+        a {
+          font-size: 0;
+        }
+
+        & .finalist-social-media {
+          &:after {
+            color: var(--aventus-blue);
+            display: inline-block;
+            font: var(--fa-font-brands);
+            font-size: 32px;
+          }
+        }
+
+        & .icon--social-facebook {
+          &:after {
+            content: '\f082';
+          }
+        }
+
+        & .icon--social-twitter {
+          &:after {
+            content: '\f081';
+          }
+        }
+
+        & .icon--social-youtube {
+          &:after {
+            content: '\f431';
+          }
+        }
+
+        & .icon--social-linkedin {
+          &:after {
+            content: '\f08c';
+          }
+        }
+
+        & .icon--social-instagram {
+          &:after {
+            content: '\e055';
+          }
+        }
+      }
+    }
+
+    &:before {
+      background: url('../images/a-logo.svg') no-repeat;
+      content: '';
+      display: block;
+      height: 74px;
+      margin-bottom: 1rem;
+      width: 74px;
+    }
+  }
+
+  .menu {
+    align-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 0;
+
+    li {
+      flex-basis: 100%;
+      padding: 1rem 0;
+
+      a {
+        color: var(--aventus-blue);
+        font-family: var(--heading-font);
+        font-size: var(--footer-heading-font-size);
+      }
+
+      ul {
+        margin-top: 0.5rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        flex-basis: 30%;
+        padding: 1rem 1rem 1rem 0;
+      }
+    }
+
+    .menu {
+      display: block;
+
+      li {
+        padding: 0 0 0.3rem;
+
+        a {
+          font-family: var(--default-font);
+          font-size: var(--footer-font-size);
+          line-height: var(--footer-line-height);
+
+          &:after {
+            content: ' >>';
+          }
+        }
+      }
+    }
+  }
+
+  &:after {
+    background: url('../images/footer-pattern.svg') repeat-x;
+    content: '';
+    display: block;
+    height: 50px;
+    width: 100%;
+  }
+}

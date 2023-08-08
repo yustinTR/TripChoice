@@ -1,0 +1,31 @@
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+name: Teaser
+status: stable
+description: Basic Teaser component.
+props:
+  type: object
+  required:
+    - title
+  properties:
+    title:
+      type: string
+      title: title
+    teaser_image:
+      type: string
+      title: image
+    image_ratio:
+      type: string
+      title: image ratio
+    image_responsive_style:
+      type: boolean
+      title: image responsive style
+    link:
+      type: string
+      title: Link
+    intro:
+      type: string
+      title: intro
+libraryOverrides:
+  css:
+    component:
+      ../../dist/components/teaser/teaser.css: { }

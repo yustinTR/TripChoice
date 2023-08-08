@@ -1,0 +1,40 @@
+uuid: 2f5aad19-af42-4dd3-a59a-fd9d07562f0a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - image.style.portrait_l
+    - image.style.portrait_m
+    - image.style.portrait_s
+    - image.style.portrait_xl
+    - image.style.portrait_xxl
+id: portrait
+label: Portrait
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: portrait_xxl
+    breakpoint_id: tripchoice.extra_extra_large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: portrait_xl
+    breakpoint_id: tripchoice.extra_large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: portrait_l
+    breakpoint_id: tripchoice.large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: portrait_m
+    breakpoint_id: tripchoice.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: portrait_s
+    breakpoint_id: tripchoice.small
+    multiplier: 1x
+breakpoint_group: Bootstrap
+fallback_image_style: portrait_l

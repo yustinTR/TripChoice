@@ -1,0 +1,14 @@
+uuid: 447bf90b-ae4d-4cec-9066-08e57fea3b09
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: swmYtBVUbwq7aHJWWDN7ODByuvur9vMkexDC9h64NZ8
+id: likert_quality
+label: 'Likertschaal: Kwaliteit'
+category: Likertschaal
+likert: true
+options: "1: Slecht\r\n2: Voldoende\r\n3: Goed\r\n4: Zeer goed\r\n5: Uitstekend\n"

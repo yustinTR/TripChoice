@@ -1,0 +1,9 @@
+# Docs at https://github.com/drush-ops/drush/blob/master/examples/example.site.yml
+
+#test:
+#  host: t-project.finalist.nl
+#  user: root
+#  root: /var/www/project.nl/web/
+#  uri:  https://t-project.finalist.nl/
+#  paths:
+#    drush-script: '/var/www/project.nl/bin/drush'

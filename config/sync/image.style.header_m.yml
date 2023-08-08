@@ -1,0 +1,17 @@
+uuid: 4cc5735b-14f0-4cf7-b021-721d3ffbaf49
+langcode: nl
+status: true
+dependencies:
+  module:
+    - focal_point
+name: header_m
+label: 'Header medium'
+effects:
+  dd1beece-0fdf-4d56-afd2-86023efebffa:
+    uuid: dd1beece-0fdf-4d56-afd2-86023efebffa
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 300
+      crop_type: focal_point

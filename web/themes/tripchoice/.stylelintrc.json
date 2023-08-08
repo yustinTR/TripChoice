@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-prettier",
+    "stylelint-order"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "color-hex-length": "long",
+    "selector-pseudo-element-colon-notation": "single",
+    "selector-class-pattern": null,
+    "scss/no-global-function-names": null,
+    "scss/at-extend-no-missing-placeholder": null,
+    "order/properties-alphabetical-order": true
+  }
+}

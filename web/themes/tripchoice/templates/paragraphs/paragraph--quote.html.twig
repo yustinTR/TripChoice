@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Template for paragraph-text-with-image.
+ *
+ * Available input variables:
+ * - paragraph.field_title: text (will be used in extended template)
+ * - paragraph.field_quote_name: text
+ * - paragraph.field_quote_organisation: text
+ * - paragraph.field_quote: text
+ */
+#}
+
+{% extends '@aventus/templates/paragraphs/paragraph.html.twig' %}
+
+{% block paragraph_content %}
+  <div class="paragraph__content">
+    <figure>
+      {% if paragraph.field_quote_name.value or paragraph.field_quote_organisation.value %}
+        <figcaption>
+          {{ paragraph.field_quote_name.value }} {{ paragraph.field_quote_organisation.value }}
+        </figcaption>
+      {% endif %}
+      {% if paragraph.field_quote.value %}
+        <blockquote>
+          {{ paragraph.field_quote.value }}
+        </blockquote>
+      {% endif %}
+    </figure>
+  </div>
+{% endblock %}

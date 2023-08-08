@@ -1,0 +1,33 @@
+uuid: c0c43ce7-26c1-414f-929f-6e2d8b52e1d5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_content.field_related_content
+    - field.field.paragraph.related_content.field_title
+    - paragraphs.paragraphs_type.related_content
+_core:
+  default_config_hash: wiqRR85ocPTMFhrEMoqSE6TXxMka2m67s2eJHxMvapM
+id: paragraph.related_content.default
+targetEntityType: paragraph
+bundle: related_content
+mode: default
+content:
+  field_related_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

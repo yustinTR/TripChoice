@@ -1,0 +1,51 @@
+.teaser {
+  box-shadow: var(--teaser-box-shadow);
+  color: var(--default-text-color);
+  list-style: none;
+  margin-bottom: var(--spacer);
+  padding-left: 0;
+
+  &-info {
+    padding: 16px;
+
+    h2 {
+      color: var(--default-text-color);
+    }
+
+    .teaser-content {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+
+      p {
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      a {
+        p {
+          color: var(--default-text-color);
+        }
+      }
+
+      .teaser-link {
+        bottom: 0;
+        color: var(--default-link-color);
+        font-family: var(--themixbold);
+        position: absolute;
+
+        i {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    border: 1px solid var(--aventus-blue);
+  }
+}

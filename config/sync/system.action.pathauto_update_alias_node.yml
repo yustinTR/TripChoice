@@ -1,0 +1,16 @@
+uuid: 888d9847-a179-4cbe-8445-76f1a926ceb1
+langcode: nl
+status: true
+dependencies:
+  module:
+    - pathauto
+  enforced:
+    module:
+      - node
+_core:
+  default_config_hash: KuJ9kYHcOMFCO01y7yBGoldtNZsDvPf3MagnuLRJekw
+id: pathauto_update_alias_node
+label: 'URL-alias bijwerken'
+type: node
+plugin: pathauto_update_alias
+configuration: {  }

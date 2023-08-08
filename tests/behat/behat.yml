@@ -1,0 +1,95 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MarkupContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+        - webship\BehatHTMLFormatter\Context\ScreenshotContext:
+            screenshotDir: "%paths.base%/results/html/assets/screenshots"
+        - DrevOps\BehatScreenshotExtension\Context\ScreenshotContext
+      filters:
+        tags: "~@wip"
+
+  extensions:
+    Drupal\MinkExtension:
+      files_path: "%paths.base%/files"
+      ajax_timeout: 15
+      goutte: ~
+    Drupal\DrupalExtension:
+      blackbox: ~
+      api_driver: "drupal"
+      text:
+        username_field: "edit-name"
+        password_field: "edit-pass"
+        log_in: "Inloggen"
+        log_out: "Uitloggen"
+      selectors:
+        message_selector: ".messages"
+        error_message_selector: ".messages.error"
+        success_message_selector: ".messages.status"
+      region_map:
+        system_status_report: "div.system-status-report"
+    webship\BehatHTMLFormatter\BehatHTMLFormatterExtension:
+      name: html
+      renderer: Twig,Behat2
+      file_name: index
+      print_args: true
+      print_outp: true
+      loop_break: true
+    DrevOps\BehatScreenshotExtension:
+      dir: "%paths.base%/results/screenshots"
+      fail: true
+      purge: true
+  formatters:
+   junit:
+     output_path: "%paths.base%/results"
+   html:
+     output_path: "%paths.base%/results/html"
+
+test:
+  extensions:
+    Drupal\MinkExtension:
+      base_url: https://t-drupal-base-develop.finalist.nl
+      selenium2:
+        browser: chrome
+        wd-host: http://83.96.201.186:4444/wd/hub
+    Drupal\DrupalExtension:
+      drupal:
+        drupal_root: "/var/www/drupal-base-develop/web"
+      drush:
+        alias: self
+  formatters:
+    pretty:
+      verbose: true
+      paths: true
+      snippets: true
+
+ddev:
+  extensions:
+    Drupal\MinkExtension:
+      base_url: "https://web"
+      selenium2:
+        wd-host: http://selenium:4444/wd/hub
+        capabilities:
+          chrome:
+            switches:
+              - "--disable-dev-shm-usage"
+          "version": "*"
+          acceptSslCerts: true
+          extra_capabilities:
+            acceptInsecureCerts: true
+    Drupal\DrupalExtension:
+      drupal:
+        drupal_root: "/var/www/html/web"
+      drush:
+        alias: self
+        binary: '/var/www/html/bin/drush'
+  formatters:
+    pretty:
+      verbose: true
+      paths: true
+      snippets: true

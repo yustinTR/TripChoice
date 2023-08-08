@@ -1,0 +1,54 @@
+uuid: ee6f5978-216a-4cc8-a057-7702441dd7b7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq.field_faq_count
+    - field.field.paragraph.faq.field_faq_more_link
+    - field.field.paragraph.faq.field_subject
+    - field.field.paragraph.faq.field_title
+    - paragraphs.paragraphs_type.faq
+_core:
+  default_config_hash: JRrC5Mc2yzBJKu25QnT15qtwWI4_1xj0hDSIG0bSXNU
+id: paragraph.faq.default
+targetEntityType: paragraph
+bundle: faq
+mode: default
+content:
+  field_faq_count:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_faq_more_link:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_subject:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

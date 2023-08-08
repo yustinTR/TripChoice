@@ -1,0 +1,20 @@
+uuid: 7bf5f019-4012-4b1c-a306-ff610f24ea58
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.news
+_core:
+  default_config_hash: lTsRJaIBtuhM34V8OcaxU2sa-sY7qBqR3NyQsc8XSSc
+id: node.news.title
+field_name: title
+entity_type: node
+bundle: news
+label: Titel
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

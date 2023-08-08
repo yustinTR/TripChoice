@@ -1,0 +1,24 @@
+{% extends '@aventus/templates/paragraphs/paragraph.html.twig' %}
+
+{% block paragraph_content %}
+  {% set button_classes = [
+    'cta',
+    'cta--' ~ paragraph.field_color.value,
+  ] | join(' ')
+  %}
+  <a href="{{ paragraph.field_link.uri }}">
+    <div class="{{ button_classes }}">
+      <div class="cta-wrapper">
+        <div class="cta-title">
+          {% include 'aventus:title' with {
+            'element': 'h2',
+            'title': paragraph.field_title.value,
+          } %}
+        </div>
+        <div class="cta-description">
+          {{ paragraph.field_button_description.value|raw }}
+        </div>
+      </div>
+    </div>
+  </a>
+{% endblock %}

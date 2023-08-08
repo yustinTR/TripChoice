@@ -1,0 +1,13 @@
+uuid: a93f0f86-ef6f-4fa9-957b-3fa1fa16d89d
+langcode: nl
+status: true
+dependencies:
+  module:
+    - path_alias
+_core:
+  default_config_hash: IpxlZS_dr5EgHsgoiy3T_ljBYkIoj8wMU5nzVCTSbGs
+id: path_alias.path_alias
+target_entity_type_id: path_alias
+target_bundle: path_alias
+default_langcode: und
+language_alterable: true

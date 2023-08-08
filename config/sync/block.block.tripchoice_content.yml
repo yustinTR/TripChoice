@@ -1,0 +1,22 @@
+uuid: 238d4b09-5f53-4046-ad22-52d39eedc497
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tripchoice
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: tripchoice_content
+theme: tripchoice
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Primaire inhoud van de pagina'
+  label_display: '0'
+  provider: system
+visibility: {  }

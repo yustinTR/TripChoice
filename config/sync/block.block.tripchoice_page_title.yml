@@ -1,0 +1,20 @@
+uuid: 6c59c604-49ef-4cbd-bddd-5b4e49834d53
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - tripchoice
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: tripchoice_page_title
+theme: tripchoice
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Paginatitel
+  label_display: '0'
+  provider: core
+visibility: {  }

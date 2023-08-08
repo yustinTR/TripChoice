@@ -1,0 +1,68 @@
+uuid: 614d5890-8808-4a05-869a-4075ad6c6037
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.news.field_introduction
+    - field.field.node.news.field_metatags
+    - field.field.node.news.field_news_type
+    - field.field.node.news.field_paragraphs
+    - field.field.node.news.field_subject
+    - field.field.node.news.field_summary
+    - node.type.news
+  module:
+    - metatag
+    - user
+_core:
+  default_config_hash: 2V8KmReWsfhCZjlv3D7Zpjp5WT0UQwvGJ9Oe9uWke8E
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  field_introduction:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_news_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_subject:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_summary:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_paragraphs: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,16 @@
+uuid: 1e92ce8b-4cd9-4dd7-8c84-5152282e47e4
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.editor
+  module:
+    - user
+_core:
+  default_config_hash: 5KFBFETt-mEoA3KiVVVbsFFGUJw1YRLIRucCDvpQNIE
+id: user_remove_role_action.editor
+label: 'De rol Redacteur verwijderen van de geselecteerde gebruikers(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor

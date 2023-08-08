@@ -1,0 +1,17 @@
+uuid: aedabedd-2b93-4996-84f6-3681f9a1007d
+langcode: nl
+status: true
+dependencies:
+  module:
+    - focal_point
+name: landscape_l
+label: 'Landscape large'
+effects:
+  112f6296-c859-42a2-8dfc-082deccb56c5:
+    uuid: 112f6296-c859-42a2-8dfc-082deccb56c5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 432
+      crop_type: focal_point

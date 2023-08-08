@@ -1,0 +1,13 @@
+uuid: 52019ff6-1215-4000-9b57-333d68cc5912
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.subject
+_core:
+  default_config_hash: 1TwP9LGNvB_M4u8coMXgol0ZgFAg3UZTatgce4QkYA0
+id: taxonomy_term.subject
+target_entity_type_id: taxonomy_term
+target_bundle: subject
+default_langcode: site_default
+language_alterable: false

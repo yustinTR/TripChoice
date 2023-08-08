@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Run phpmd checks on code
+## Usage: phpmd
+## Example: "ddev phpmd path/to/module/folder"
+
+bin/phpmd $@ text ./phpmd-ruleset.xml

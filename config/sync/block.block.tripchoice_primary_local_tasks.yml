@@ -1,0 +1,22 @@
+uuid: 265e7d8f-92e8-4f3f-bdba-2fa15dce0a07
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - tripchoice
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: tripchoice_primary_local_tasks
+theme: tripchoice
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primaire tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: acf701a2-4d97-4e9f-85b6-76c1704c9f71
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tripchoice
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: tripchoice_powered
+theme: tripchoice
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Gebouwd met Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

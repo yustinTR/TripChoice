@@ -1,0 +1,27 @@
+uuid: b6d90d0f-06b1-4b83-8cad-62db8102f18b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_caption
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - basic_html
+id: paragraph.text_with_image.field_caption
+field_name: field_caption
+entity_type: paragraph
+bundle: text_with_image
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

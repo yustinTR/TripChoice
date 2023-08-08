@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: Td1wq1c2URIy-Qu8rj6GUiCom3dq8XfEPk-q03NSpNs
+langcode: nl
+ignored_config_entities:
+  - 'webform.webform.*'
+  - contact.settings

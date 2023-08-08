@@ -1,0 +1,5 @@
+_core:
+  default_config_hash: Ky71KUpSZ7NDwoV3a7j_V1g3cuapFhU3xLo12fxrhLg
+langcode: nl
+crop_type: focal_point
+default_value: '50,50'

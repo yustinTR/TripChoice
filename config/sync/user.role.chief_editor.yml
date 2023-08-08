@@ -1,0 +1,135 @@
+uuid: cd1bbeb0-1a6a-4713-a1d2-0897771bd118
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.embed
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - node.type.events
+    - node.type.faq
+    - node.type.news
+    - node.type.page
+    - taxonomy.vocabulary.event_type
+    - taxonomy.vocabulary.news_type
+    - taxonomy.vocabulary.subject
+    - taxonomy.vocabulary.tags
+  module:
+    - file
+    - filter
+    - locale
+    - media
+    - menu_admin_per_menu
+    - node
+    - paragraphs
+    - paragraphs_type_permissions
+    - path
+    - rabbit_hole
+    - scheduler
+    - system
+    - taxonomy
+    - toolbar
+_core:
+  default_config_hash: w04v8CdzTdrDuKPqB_9AplWfhIbXylDcjKar4mLzKcY
+id: chief_editor
+label: Hoofdredacteur
+weight: -7
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access site in maintenance mode'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer footer menu items'
+  - 'administer main menu items'
+  - 'administer users'
+  - 'bypass paragraphs type content access'
+  - 'cancel account'
+  - 'create document media'
+  - 'create events content'
+  - 'create faq content'
+  - 'create image media'
+  - 'create media'
+  - 'create news content'
+  - 'create page content'
+  - 'create paragraph content faq'
+  - 'create paragraph content image'
+  - 'create paragraph content quote'
+  - 'create paragraph content text_with_image'
+  - 'create remote_video media'
+  - 'create terms in event_type'
+  - 'create terms in news_type'
+  - 'create terms in subject'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete any document media'
+  - 'delete any events content'
+  - 'delete any faq content'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete any remote_video media'
+  - 'delete events revisions'
+  - 'delete faq revisions'
+  - 'delete media'
+  - 'delete news revisions'
+  - 'delete own document media'
+  - 'delete own events content'
+  - 'delete own faq content'
+  - 'delete own image media'
+  - 'delete own remote_video media'
+  - 'delete page revisions'
+  - 'delete paragraph content faq'
+  - 'delete paragraph content image'
+  - 'delete paragraph content quote'
+  - 'delete paragraph content text_with_image'
+  - 'delete terms in event_type'
+  - 'delete terms in news_type'
+  - 'delete terms in subject'
+  - 'delete terms in tags'
+  - 'edit any events content'
+  - 'edit any faq content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit own events content'
+  - 'edit own faq content'
+  - 'edit terms in event_type'
+  - 'edit terms in news_type'
+  - 'edit terms in subject'
+  - 'edit terms in tags'
+  - 'rabbit hole bypass node'
+  - 'revert events revisions'
+  - 'revert faq revisions'
+  - 'revert news revisions'
+  - 'revert page revisions'
+  - 'schedule publishing of media'
+  - 'schedule publishing of nodes'
+  - 'schedule publishing of taxonomy_term'
+  - 'translate interface'
+  - 'update any media'
+  - 'update paragraph content faq'
+  - 'update paragraph content image'
+  - 'update paragraph content quote'
+  - 'update paragraph content text_with_image'
+  - 'use text format basic_html'
+  - 'use text format embed'
+  - 'view events revisions'
+  - 'view faq revisions'
+  - 'view news revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view paragraph content image'
+  - 'view scheduled content'
+  - 'view scheduled media'
+  - 'view scheduled taxonomy_term'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'
+  - 'view user email addresses'

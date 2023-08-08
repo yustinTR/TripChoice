@@ -1,0 +1,55 @@
+<header class="page-header">
+  <div class="header-image">
+    {% if node.field_header_image.entity.field_media_image.target_id %}
+      {% include 'tripchoice:image' with {
+        'file': node.field_header_image.entity.field_media_image.target_id,
+        'ratio': 'header',
+        'responsive_style': true,
+        'alt_text': node.field_header_image.entity.field_media_image.alt,
+      } %}
+    {% endif %}
+    <div class="header-inner container">
+      {% if  title %}
+        <div class="header-title">
+          {% include 'tripchoice:title' with {
+            'element': 'h1',
+            'title': title ,
+          } %}
+        </div>
+      {% endif %}
+      {% if  sub_title %}
+        <div class="header-subtitle">
+            {% include 'tripchoice:title' with {
+              'element': 'h2',
+              'title': sub_title ,
+            } %}
+        </div>
+      {% endif %}
+
+      {% if header_blocks %}
+      <div class="header-blocks action-links">
+        <ul class="row col-12">
+          {% if content_type == 'study' %}
+            {% for item in paragraphs%}
+              {% if item['#paragraph'].type[0].value.target_id|raw == 'study_content' %}
+                {% if(item['#paragraph'].field_show_as_tab[0].value) %}
+                  <li class="col-12 col-md-6 col-lg-3 "><a href="#{{ item['#paragraph'].id[0].value|raw }}"><span>{{ item['#paragraph'].field_tab_title[0].value|raw }}</span></a></li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            <li class="block-aanmelden col-12 col-md-6 col-lg-3"><a><span>Aanmelden</span></a></li>
+          {% elseif content_type == 'landing' %}
+            {% if header_links|render|trim %}
+              {% for item in header_links%}
+                {% if item['#type'] == 'link' %}
+                <li class="col-12 col-md-6 col-lg-4 "><a href="{{ item['#url'] }}"><span>{{ item['#title'] }}</span></a></li>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</header>

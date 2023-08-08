@@ -1,0 +1,34 @@
+uuid: 0e6873b3-2936-48bc-9fb7-ea03709cccc1
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: true
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: true
+    show_message_after_update: true
+    unpublish_enable: true
+    unpublish_required: false
+    unpublish_revision: true
+_core:
+  default_config_hash: RNJj1Vxyf0O2OOqpeRKHRQDwaCHSfY_CZ9DWvGBufAo
+name: Pagina
+type: page
+description: "Gebruik <em>Pagina's</em> voor vaste inhoud, zoals een 'Over ons'-pagina."
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

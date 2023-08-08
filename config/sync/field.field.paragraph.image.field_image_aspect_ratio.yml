@@ -1,0 +1,25 @@
+uuid: a3f9a568-6ede-4c15-aa1b-80b57cc7d1fc
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_aspect_ratio
+    - paragraphs.paragraphs_type.image
+  module:
+    - options
+_core:
+  default_config_hash: 3yyUGPqhpFltK3gnnvXSjOt8kqBe_pBRVPnKeE3koYs
+id: paragraph.image.field_image_aspect_ratio
+field_name: field_image_aspect_ratio
+entity_type: paragraph
+bundle: image
+label: 'Aspect ratio'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: full
+default_value_callback: ''
+settings: {  }
+field_type: list_string

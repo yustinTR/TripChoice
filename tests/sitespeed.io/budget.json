@@ -1,0 +1,20 @@
+{
+  "budget": {
+    "https://t-drupal-base-develop.finalist.nl": {
+      "timings": {
+        "SpeedIndex": 900
+      },
+      "score": {
+        "performance": 70,
+        "privacy": 70,
+        "bestpractice": 70
+      },
+      "axe": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0
+      }
+    }
+  }
+}

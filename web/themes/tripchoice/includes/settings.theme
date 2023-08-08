@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * settings.theme
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Custom theme settings.
+ */
+function tripchoice_form_system_theme_settings_alter(&$form, FormStateInterface $form_state, $form_id = NULL) {
+  if (isset($form_id)) {
+    return;
+  }
+
+  $form['tripchoice_settings']['tripchoice_utilities'] = [
+    '#type' => 'fieldset',
+    '#title' => t('tripchoice utilities'),
+  ];
+
+  $form['tripchoice_settings']['tripchoice_utilities']['enable_button'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Enable button library'),
+    '#default_value' => theme_get_setting('enable_button'),
+    '#description' => t('Enables the epic button'),
+  ];
+
+  $form['tripchoice_settings']['tripchoice_utilities']['enable_fa'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Enable Font awesome'),
+    '#default_value' => theme_get_setting('enable_fa'),
+    '#description' => t('Enables Font awesome'),
+  ];
+}

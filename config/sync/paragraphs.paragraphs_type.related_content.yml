@@ -1,0 +1,12 @@
+uuid: d0ecfb68-fdf2-4656-92f9-78f3735e88ea
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0CiXTxOVZV8okh8gHsSUWlf6pM08Yws2F5SZ-c18oS8
+id: related_content
+label: 'Gerelateerde inhoud'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

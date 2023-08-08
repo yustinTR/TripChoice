@@ -1,0 +1,25 @@
+uuid: 1d1d0894-502e-4572-b2a7-e3fbee58bce2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_alignment
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - options
+_core:
+  default_config_hash: T7O0jY9lFPhUxOVxjFTDWpkt-V7cNJoX33Yib_wiSww
+id: paragraph.text_with_image.field_image_alignment
+field_name: field_image_alignment
+entity_type: paragraph
+bundle: text_with_image
+label: 'Uitlijning afbeelding'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

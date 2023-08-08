@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Run phpcbf on code to automatically fix code style issues.
+## Usage: phpcbf
+## Example: "ddev phpcbf path/to/module/folder"
+
+bin/phpcbf --standard=./web/core/phpcs.xml.dist --ignore=vendor $@
