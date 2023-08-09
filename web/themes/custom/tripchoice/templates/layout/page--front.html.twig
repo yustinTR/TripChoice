@@ -1,0 +1,50 @@
+{#
+/**
+* @file
+* Theme override to display a single page.
+*
+* @see template_preprocess_page()
+* @see html.html.twig
+*/
+#}
+
+
+{% if page.highlighted %}
+  <div class="highlighted container">
+    {{ page.highlighted }}
+  </div>
+{% endif %}
+<header>
+  <div class="header" style="cursor: url('/sites/default/files/2023-08/cursor.svg') 30 20, auto !important;">
+    <div class="header--bg-image" style="background-image:linear-gradient(rgba(140, 123, 108, 0.2) 10%, rgba(47, 56, 64, 1)),url({{ file_url( header_image_url) }})">
+      <div class="header--nav">
+        {% include '@tripchoice/layout/header.html.twig' %}
+      </div>
+      <div class="container">
+        <div class="header--inner">
+          <h1 class="header--title">{{ page_title }}</h1>
+          <p class="header--text">{{ page_intro }}</p>
+          <div class="header--link">
+            <a  href="{{ page_read_more_url }}">{{ page_read_more_title }} </a>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main role="main" class="col-12">
+  <div class="container">
+    <div class="row">
+      <section class="content">
+        {{ page.content }}
+      </section>
+    </div>
+  </div>
+</main>
+
+
+
+{% include '@tripchoice/layout/footer.html.twig' %}

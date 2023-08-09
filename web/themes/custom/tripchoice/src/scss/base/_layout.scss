@@ -2,23 +2,3 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-
-.sidebar {
-  display: none;
-
-  @include media-breakpoint-up(lg) {
-    display: block;
-
-    ul {
-      padding-left: 0;
-
-      li {
-        list-style: none;
-
-        label {
-          padding-left: 0.5em;
-        }
-      }
-    }
-  }
-}

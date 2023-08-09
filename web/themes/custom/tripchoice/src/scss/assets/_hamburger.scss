@@ -2,31 +2,26 @@
   display: flex;
   flex-direction: row-reverse;
 
-  .hamburger-toggle {
-    background-color: var(--aventus-gray);
+  &--icon {
     cursor: pointer;
     display: block;
     height: 40px;
     margin: 16px 0 0;
     width: 40px;
 
-    @include media-breakpoint-up(lg) {
+    &-close {
       display: none;
     }
 
-    &:after {
-      color: var(--aventus-white);
-      content: '\f0c9';
-      display: block;
-      font: var(--fa-font-solid);
-      line-height: var(--h1-line-height);
-      text-align: center;
+    @include media-breakpoint-up(md) {
+      display: none;
     }
   }
 }
 
 .mobile-navigation-region {
-  background-color: var(--gray-bg);
+  background-color: var(--primary);
+  color: var(--secondary-font-color);
   max-height: 0;
   overflow: hidden;
   transition: var(--transition-speed);
@@ -43,16 +38,6 @@
 
       > .menu {
         max-height: 0;
-      }
-
-      a {
-        border-bottom: 1px solid var(--hamburger-seperator-color);
-        color: var(--servicemenu-link-color);
-        display: inline-block;
-        font-family: var(--heading-font);
-        font-size: var(--default-font-size);
-        line-height: var(--default-line-height);
-        width: 100%;
       }
     }
   }

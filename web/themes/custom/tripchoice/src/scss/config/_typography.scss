@@ -10,51 +10,34 @@
 
 :root {
   // Basic fonts
-  --titillium: 'Titillium', helvetica, arial;
-  --themixbold: 'the_mix_bold-bold';
-  --themixplain: 'TheMix-Plain';
-  --sunn: 'Sunn';
-  --arial: arial;
-  --default-font: var(--arial);
-  --heading-font: var(--themixbold);
+  --noto-serif: 'noto-serif', arial;
+  --montserrat: 'montserrat', arial;
+  --default-font: var(--montserrat);
+  --heading-font: var(--noto-serif);
 
   // Font settings
-  --default-font-size: 16px;
-  --default-line-height: 2;
+  --default-font-size: 18px;
 
   // BASIC FONT SIZES
-  --h1-font-size: 32px;
-  --h1-line-height: 40px;
-  --h2-font-size: 24px;
-  --h2-line-height: 32px;
-  --h3-font-size: 19px;
-  --h3-line-height: 24px;
+  --h1-font-size: 60px;
+  --h2-font-size: 48px;
+  --h3-font-size: 36px;
+  --h4-font-size: 24px;
 
-  // Main menu
-  --mainmenu-font-size: 21px;
-  --mainmenu-line-height: 21px;
-
-  // Service menu
-  --servicemenu-font-size: 14px;
-  --servicemenu-line-height: 22px;
-
-  // Hamburger menu
-  --hamburger-font-size: 24px;
-  --hamburger-line-height: 24px;
-
-  // Footer
-  --footer-font-size: 15px;
-  --footer-line-height: 19px;
-  --footer-heading-font-size: 24px;
-  --footer-heading-line-height: 24px;
+  @include media-breakpoint-down(md) {
+    --h1-font-size: 40px;
+    --h2-font-size: 36px;
+    --h3-font-size: 24px;
+    --h4-font-size: 18px;
+    --default-font-size: 14px;
+  }
 }
 
 html,
 body {
-  color: var(--default-text-color);
+  color: var(--primary-font-color);
   font-family: var(--default-font);
   font-size: var(--default-font-size);
-  line-height: var(--default-line-height);
 }
 
 h1,
@@ -64,31 +47,27 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font);
-  font-weight: normal;
-  margin: 0 0 5px;
 }
 
 h1 {
   font-size: var(--h1-font-size);
-  line-height: var(--h1-line-height);
 }
 
 h2 {
   font-size: var(--h2-font-size);
-  line-height: var(--h2-line-height);
 }
 
 h3 {
   font-size: var(--h3-font-size);
-  line-height: var(--h3-line-height);
 }
 
 a {
-  color: var(--default-link-color);
+  color: var(--secondary-font-color);
+  font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 p {
-  line-height: var(--default-line-height);
-  margin: 1em 0;
+  font-size: var(--default-font-size);
 }

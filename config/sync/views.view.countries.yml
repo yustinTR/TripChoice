@@ -119,8 +119,18 @@ display:
             country: country
       style:
         type: html_list
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
-        type: fields
+        type: 'entity:taxonomy_term'
+        options:
+          relationship: none
+          view_mode: default
       query:
         type: views_query
         options:
@@ -140,8 +150,8 @@ display:
         - 'languages:language_interface'
         - user.permissions
       tags: {  }
-  block_1:
-    id: block_1
+  contries_block:
+    id: contries_block
     display_title: Block
     display_plugin: block
     position: 1

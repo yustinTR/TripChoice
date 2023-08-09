@@ -1,0 +1,50 @@
+#block-tripchoice-views-block-countries-contries-block {
+  .item-list {
+    ul {
+      padding: 0;
+
+      li {
+        filter: grayscale(80%);
+        list-style: none;
+        width: 100%;
+
+        .country-item {
+          background-position: center;
+          background-repeat: no-repeat, repeat;
+          background-size: cover;
+          height: 20vh;
+          position: relative;
+
+          &--text {
+            bottom: 15px;
+            color: var(--secondary-font-color);
+            position: absolute;
+          }
+
+          &--title {
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        display: flex;
+
+        li {
+          transition: 1s;
+          width: calc(100% / 3);
+
+          .country-item {
+            height: 60vh;
+          }
+
+          &:hover {
+            filter: grayscale(0);
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

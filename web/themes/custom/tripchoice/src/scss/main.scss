@@ -15,20 +15,13 @@
 @import 'base/admin';
 @import 'base/layout';
 @import 'base/header';
-@import 'base/footer';
 @import 'base/landings-page';
 
 // Navigation
-@import 'base/navigation';
 @import 'base/menus/main-menu';
-@import 'base/menus/service-menu';
 
 // Import assets
 @import 'assets/hamburger';
-@import 'assets/searchbar';
-@import 'assets/breadcrumb';
-@import 'assets/actionlinks';
-@import 'assets/formelements';
 
 // Import paragraphs
 @import 'paragraphs/call_to_action';
@@ -37,7 +30,4 @@
 @import 'paragraphs/study-content';
 
 // Import views
-@import 'views/events';
-@import 'views/news';
-@import 'views/study';
-@import 'views/sutdent_qoute';
+@import 'views/countries';

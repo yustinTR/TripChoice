@@ -1,0 +1,29 @@
+uuid: 2f3f7d01-ce02-4e28-9ebc-b58d0ae26911
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.countries
+  module:
+    - system
+    - views
+  theme:
+    - tripchoice
+id: tripchoice_views_block__countries_contries_block
+theme: tripchoice
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:countries-contries_block'
+settings:
+  id: 'views_block:countries-contries_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

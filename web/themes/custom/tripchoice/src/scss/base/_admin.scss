@@ -14,11 +14,7 @@
   z-index: 100;
 
   .tabs {
-    background: linear-gradient(
-      to bottom,
-      var(--aventus-gray) 7%,
-      var(--aventus-gray-dh) 100%
-    );
+    background: var(--primary);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     display: inline-block;
@@ -54,15 +50,15 @@
         a {
           background: inherit;
           border: 0;
-          border-right: 1px solid var(--aventus-gray-dh);
-          color: var(--aventus-white);
+          border-right: 1px solid var(--primary);
+          color: var(--white);
           display: block;
           font-size: inherit;
           padding: 20px 40px;
           text-decoration: none;
 
           &:hover {
-            color: var(--aventus-black);
+            color: var(--black);
             transition: 0.5s;
           }
         }
@@ -71,13 +67,13 @@
         &:hover a {
           background: $white;
           box-shadow: 0 20px 10px -20px rgb(113 113 116 / 15%) inset;
-          color: var(--aventus-gray-dh);
+          color: var(--primary);
           text-shadow: none;
           transition: 0.5s;
         }
 
         &:hover > a {
-          color: var(--aventus-blue);
+          color: var(--secondary);
           transition: 0.5s;
         }
 
@@ -101,5 +97,5 @@
 }
 
 html.paragraphs-previewer-html {
-  background-color: var(--aventus-white);
+  background-color: var(--white);
 }

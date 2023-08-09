@@ -5,7 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.landings_page.field_header_image
+    - field.field.node.landings_page.field_introduction
     - field.field.node.landings_page.field_paragraphs
+    - field.field.node.landings_page.field_read_more
     - node.type.landings_page
   module:
     - user
@@ -21,6 +23,8 @@ content:
     region: content
 hidden:
   field_header_image: true
+  field_introduction: true
   field_paragraphs: true
+  field_read_more: true
   langcode: true
   search_api_excerpt: true

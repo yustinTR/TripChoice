@@ -4,12 +4,66 @@ status: true
 dependencies:
   config:
     - field.field.node.landings_page.field_header_image
+    - field.field.node.landings_page.field_introduction
     - field.field.node.landings_page.field_paragraphs
+    - field.field.node.landings_page.field_read_more
     - node.type.landings_page
   module:
+    - field_group
+    - link
     - media_library
     - paragraphs
     - path
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - field_paragraphs
+      label: inhoud
+      region: content
+      parent_name: group_tabs
+      weight: 4
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_general:
+      children:
+        - title
+        - field_introduction
+        - field_header_image
+        - field_read_more
+      label: Algemeen
+      region: content
+      parent_name: group_tabs
+      weight: 2
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_tabs:
+      children:
+        - group_general
+        - group_content
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
 id: node.landings_page.default
 targetEntityType: node
 bundle: landings_page
@@ -17,20 +71,28 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_header_image:
     type: media_library_widget
-    weight: 121
+    weight: 3
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
+  field_introduction:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_paragraphs:
     type: paragraphs
-    weight: 19
+    weight: 8
     region: content
     settings:
       title: Paragraaf
@@ -47,6 +109,14 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_read_more:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 2
@@ -56,34 +126,34 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 15
+    weight: 6
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 120
+    weight: 10
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 16
+    weight: 7
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 1
     region: content
     settings:
       size: 60
@@ -91,7 +161,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS

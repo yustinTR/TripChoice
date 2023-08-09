@@ -1,0 +1,23 @@
+uuid: 5d169df1-7bec-48b5-99fe-d22a8599da78
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tripchoice
+id: tripchoice_branding
+theme: tripchoice
+region: branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Branding van de website'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

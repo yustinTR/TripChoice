@@ -1,0 +1,29 @@
+uuid: 71e9111b-1fc7-4c9b-a121-d575ebaab554
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+id: mobile_main_menu
+theme: tripchoice
+region: mobile_navigation
+weight: -10
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'mobiele hoofdnavigatie'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

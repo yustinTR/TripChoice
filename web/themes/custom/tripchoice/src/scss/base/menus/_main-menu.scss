@@ -1,95 +1,32 @@
-.navigation {
-  display: none;
-
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
+.header {
+  &--logo {
+    img {
+      max-width: 50px;
+    }
   }
 
-  .menu-item {
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  &--menu {
+    display: none;
 
-    a {
-      color: var(--aventus-black);
-      font-family: var(--heading-font);
-      font-size: var(--mainmenu-font-size);
-      height: 43px;
-      line-height: var(--mainmenu-line-height);
-    }
-
-    > ul {
-      background-color: var(--gray-bg);
-      box-shadow: 0 10px 10px -10px;
-      display: none;
-      height: auto;
-      padding: 12px 0;
-      position: absolute;
-      width: 100%;
-      z-index: 2;
-
-      &:before {
-        background-color: var(--gray-bg);
-        content: '';
-        height: 100%;
-        left: -50vw;
-        padding: 12px 0;
-        position: absolute;
-        top: 0;
-        width: 150vw;
-        z-index: -1;
-      }
-
-      li {
-        > ul {
-          padding: 0;
-          position: relative;
-
-          li {
-            display: block;
-
-            a {
-              font-family: var(--themixplain);
-              font-size: var(--default-font-size);
-              line-height: var(--default-line-height);
-            }
-
-            &:before {
-              color: var(--aventus-black);
-              content: '\f054';
-              display: inline-block;
-              font: var(--fa-font-solid);
-              font-size: 12px;
-            }
-          }
-        }
-      }
-    }
-
-    &:hover {
-      > a {
-        color: var(--aventus-blue);
-      }
-
-      ul {
-        display: flex;
-        gap: 20px;
-        justify-content: flex-start;
-
-        > li {
-          > ul {
-            display: block;
-          }
-        }
-      }
+    &-item {
+      list-style: none;
+      padding: var(--spacer-s);
     }
   }
 
   @include media-breakpoint-up(md) {
-    display: block;
+    &--menu {
+      display: block;
+
+      &-container {
+        float: right;
+        margin-top: 20px;
+      }
+
+      &-item {
+        font-size: 12px;
+        list-style: none;
+      }
+    }
   }
 }
