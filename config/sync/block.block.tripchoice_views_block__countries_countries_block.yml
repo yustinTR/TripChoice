@@ -1,4 +1,4 @@
-uuid: 2f3f7d01-ce02-4e28-9ebc-b58d0ae26911
+uuid: 495b2883-e489-44f8-abac-13cfa2eb9e53
 langcode: nl
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - tripchoice
-id: tripchoice_views_block__countries_contries_block
+id: tripchoice_views_block__countries_countries_block
 theme: tripchoice
 region: content
 weight: 0
 provider: null
-plugin: 'views_block:countries-contries_block'
+plugin: 'views_block:countries-countries_block'
 settings:
-  id: 'views_block:countries-contries_block'
+  id: 'views_block:countries-countries_block'
   label: ''
   label_display: '0'
   provider: views

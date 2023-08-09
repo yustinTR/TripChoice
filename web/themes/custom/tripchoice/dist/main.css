@@ -5132,42 +5132,42 @@ body {
   color: var(--default-link-color);
 }
 
-#block-tripchoice-views-block-countries-contries-block .item-list ul {
+#block-tripchoice-views-block-countries-countries-block .item-list ul {
   padding: 0;
 }
-#block-tripchoice-views-block-countries-contries-block .item-list ul li {
+#block-tripchoice-views-block-countries-countries-block .item-list ul li {
   filter: grayscale(80%);
   list-style: none;
   width: 100%;
 }
-#block-tripchoice-views-block-countries-contries-block .item-list ul li .country-item {
+#block-tripchoice-views-block-countries-countries-block .item-list ul li .country-item {
   background-position: center;
   background-repeat: no-repeat, repeat;
   background-size: cover;
   height: 20vh;
   position: relative;
 }
-#block-tripchoice-views-block-countries-contries-block .item-list ul li .country-item--text {
+#block-tripchoice-views-block-countries-countries-block .item-list ul li .country-item--text {
   bottom: 15px;
   color: var(--secondary-font-color);
   position: absolute;
 }
-#block-tripchoice-views-block-countries-contries-block .item-list ul li .country-item--title {
+#block-tripchoice-views-block-countries-countries-block .item-list ul li .country-item--title {
   font-weight: bold;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  #block-tripchoice-views-block-countries-contries-block .item-list ul {
+  #block-tripchoice-views-block-countries-countries-block .item-list ul {
     display: flex;
   }
-  #block-tripchoice-views-block-countries-contries-block .item-list ul li {
+  #block-tripchoice-views-block-countries-countries-block .item-list ul li {
     transition: 1s;
     width: 33.3333333333%;
   }
-  #block-tripchoice-views-block-countries-contries-block .item-list ul li .country-item {
+  #block-tripchoice-views-block-countries-countries-block .item-list ul li .country-item {
     height: 60vh;
   }
-  #block-tripchoice-views-block-countries-contries-block .item-list ul li:hover {
+  #block-tripchoice-views-block-countries-countries-block .item-list ul li:hover {
     filter: grayscale(0);
     width: 50%;
   }

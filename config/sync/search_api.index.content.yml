@@ -3,9 +3,11 @@ langcode: nl
 status: true
 dependencies:
   config:
+    - field.storage.node.field_image
     - field.storage.node.field_event_type
     - field.storage.node.field_event_date
     - field.storage.node.field_introduction
+    - field.storage.node.field_country
     - field.storage.node.field_metatags
     - field.storage.node.field_news_type
     - field.storage.node.field_subject
@@ -128,6 +130,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_city
+  field_country:
+    label: Land
+    datasource_id: 'entity:node'
+    property_path: field_country
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_country
   field_event_date:
     label: Datum
     datasource_id: 'entity:node'
@@ -155,6 +165,14 @@ field_settings:
         - field.storage.paragraph.field_image
       module:
         - paragraphs
+  field_image_1:
+    label: Afbeelding
+    datasource_id: 'entity:node'
+    property_path: field_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_image
   field_introduction:
     label: Introductie
     datasource_id: 'entity:node'

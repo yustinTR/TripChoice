@@ -1,0 +1,19 @@
+uuid: 2d5cb13d-a120-4be7-9354-78bc554efbe5
+langcode: nl
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_qoute
+field_name: field_qoute
+entity_type: taxonomy_term
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

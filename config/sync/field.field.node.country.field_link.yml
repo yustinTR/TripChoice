@@ -1,0 +1,23 @@
+uuid: 6279ea0a-88e0-463b-8798-3c2e096805b6
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.country
+  module:
+    - link
+id: node.country.field_link
+field_name: field_link
+entity_type: node
+bundle: country
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

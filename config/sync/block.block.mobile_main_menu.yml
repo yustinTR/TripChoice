@@ -6,6 +6,8 @@ dependencies:
     - system.menu.main
   module:
     - menu_block
+  theme:
+    - tripchoice
 id: mobile_main_menu
 theme: tripchoice
 region: mobile_navigation

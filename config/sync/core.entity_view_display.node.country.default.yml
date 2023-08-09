@@ -1,26 +1,28 @@
-uuid: 74ee6016-57a0-4102-8150-ddf95617151a
+uuid: 109eaf2f-551b-4fb5-b410-8773dfd690b6
 langcode: nl
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.country.field_image
-    - field.field.taxonomy_term.country.field_link
-    - field.field.taxonomy_term.country.field_qoute
-    - taxonomy.vocabulary.country
+    - field.field.node.country.body
+    - field.field.node.country.field_image
+    - field.field.node.country.field_introduction
+    - field.field.node.country.field_link
+    - node.type.country
   module:
     - link
     - text
-id: taxonomy_term.country.default
-targetEntityType: taxonomy_term
+    - user
+id: node.country.default
+targetEntityType: node
 bundle: country
 mode: default
 content:
-  description:
+  body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 101
     region: content
   field_image:
     type: entity_reference_entity_view
@@ -29,7 +31,14 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 102
+    region: content
+  field_introduction:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
     region: content
   field_link:
     type: link
@@ -41,14 +50,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 103
     region: content
-  field_qoute:
-    type: basic_string
-    label: above
+  links:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 100
     region: content
 hidden:
   langcode: true

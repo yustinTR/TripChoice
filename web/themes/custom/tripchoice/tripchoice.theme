@@ -39,13 +39,17 @@ function tripchoice_preprocess(&$variables) {
     $page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
     $variables['page_title'] = $page_title;
 
-    $page_intro = $node->get('field_introduction')->getString();
-    $page_read_more_link = $node->get('field_read_more')->getValue();
-    $page_read_more_link_text = $page_read_more_link[0]['title'];
-    $page_read_more_link_url = $page_read_more_link[0]['uri'];
-    $variables['page_intro'] = $page_intro;
-    $variables['page_read_more_title'] = $page_read_more_link_text;
-    $variables['page_read_more_link'] = $page_read_more_link_url;
+
+    if( \Drupal::service('path.matcher')->isFrontPage()){
+      $page_intro = $node->get('field_introduction')->getString();
+      $page_read_more_link = $node->get('field_read_more')->getValue();
+      $page_read_more_link_text = $page_read_more_link[0]['title'];
+      $page_read_more_link_url = $page_read_more_link[0]['uri'];
+      $variables['page_intro'] = $page_intro;
+      $variables['page_read_more_title'] = $page_read_more_link_text;
+      $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+      $variables['page_read_more_link'] = $page_read_more_link_url;
+    }
   }
 }
 

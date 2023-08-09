@@ -1,0 +1,14 @@
+uuid: 2c673a2e-e2ce-4b54-800a-b7d91e33ceb3
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.country
+id: node_type_country
+entity_type_id: node_type
+entity_id: country
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

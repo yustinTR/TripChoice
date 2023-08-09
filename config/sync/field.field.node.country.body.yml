@@ -1,0 +1,24 @@
+uuid: eebbef88-2efb-47ca-ab4a-aa9316b42a2b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.country
+  module:
+    - text
+id: node.country.body
+field_name: body
+entity_type: node
+bundle: country
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
