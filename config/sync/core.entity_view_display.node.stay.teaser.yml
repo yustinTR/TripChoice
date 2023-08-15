@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.stay.field_introduction
     - field.field.node.stay.field_paragraphs
+    - field.field.node.stay.field_related_city
+    - field.field.node.stay.field_related_country
     - field.field.node.stay.field_stay_sort
+    - field.field.node.stay.field_teaser_image
     - node.type.stay
   module:
     - user
@@ -20,7 +24,11 @@ content:
     weight: 100
     region: content
 hidden:
+  field_introduction: true
   field_paragraphs: true
+  field_related_city: true
+  field_related_country: true
   field_stay_sort: true
+  field_teaser_image: true
   langcode: true
   search_api_excerpt: true

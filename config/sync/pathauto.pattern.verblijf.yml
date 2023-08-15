@@ -1,0 +1,22 @@
+uuid: fd1c27d2-d166-4b73-8222-59adb60a3a4f
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: verblijf
+label: verblijf
+type: 'canonical_entities:node'
+pattern: '/verblijf/[node:title]'
+selection_criteria:
+  9ccb5a2e-2bcb-46bd-b030-06127899c0d6:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 9ccb5a2e-2bcb-46bd-b030-06127899c0d6
+    context_mapping:
+      node: node
+    bundles:
+      stay: stay
+selection_logic: and
+weight: -8
+relationships: {  }

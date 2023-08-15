@@ -10,18 +10,18 @@
  */
 #}
 
-{% extends '@aventus/templates/paragraphs/paragraph.html.twig' %}
+{% extends '@tripchoice/templates/paragraphs/paragraph.html.twig' %}
 
 {% block paragraph_content %}
-  <div class="paragraph-content text-with-image">
+  <div class="paragraph-content text-with-image container">
     <div class="text-with-image-title">
-      {% include 'aventus:title' with {
+      {% include 'tripchoice:title' with {
         'element': 'h2',
         'title': paragraph.field_title.value,
       } %}
     </div>
     {% if paragraph.field_image.entity.field_media_image.target_id %}
-      {% include 'aventus:image' with {
+      {% include 'tripchoice:image' with {
         'file': paragraph.field_image.entity.field_media_image.target_id,
         'ratio': 'landscape',
         'responsive_style': true,

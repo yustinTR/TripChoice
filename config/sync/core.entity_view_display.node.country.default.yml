@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.country.body
+    - field.field.node.country.field_header_image
     - field.field.node.country.field_image
     - field.field.node.country.field_introduction
     - field.field.node.country.field_link
+    - field.field.node.country.field_paragraphs
     - node.type.country
   module:
+    - entity_reference_revisions
     - link
     - text
     - user
@@ -23,6 +26,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_header_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 107
     region: content
   field_image:
     type: entity_reference_entity_view
@@ -51,6 +63,15 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 106
     region: content
   links:
     settings: {  }

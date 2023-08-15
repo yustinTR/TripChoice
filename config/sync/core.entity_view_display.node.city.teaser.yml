@@ -1,0 +1,30 @@
+uuid: 81e964aa-3180-4c62-9df1-9c10b6de676f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.city.field_header_image
+    - field.field.node.city.field_introduction
+    - field.field.node.city.field_paragraphs
+    - field.field.node.city.field_related_country
+    - node.type.city
+  module:
+    - user
+id: node.city.teaser
+targetEntityType: node
+bundle: city
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_header_image: true
+  field_introduction: true
+  field_paragraphs: true
+  field_related_country: true
+  langcode: true
+  search_api_excerpt: true

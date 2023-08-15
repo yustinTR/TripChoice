@@ -1,0 +1,58 @@
+uuid: d2e01720-c416-47f4-a323-d90d556f7cf7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.country
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.related_content
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - entity_reference_revisions
+id: node.country.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: country
+label: Paragrafen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image: image
+      quote: quote
+      related_content: related_content
+      text_with_image: text_with_image
+    negate: 0
+    target_bundles_drag_drop:
+      embed:
+        weight: 13
+        enabled: false
+      faq:
+        weight: 14
+        enabled: false
+      image:
+        weight: 15
+        enabled: true
+      quote:
+        weight: 16
+        enabled: true
+      related_content:
+        weight: 17
+        enabled: true
+      text_with_image:
+        weight: 18
+        enabled: true
+      video:
+        weight: 19
+        enabled: false
+      webform:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

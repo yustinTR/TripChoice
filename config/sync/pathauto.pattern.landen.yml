@@ -1,0 +1,22 @@
+uuid: 1871768d-d2df-4dad-ba5b-d780fd165f21
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: landen
+label: Landen
+type: 'canonical_entities:node'
+pattern: '/landen/[node:title]'
+selection_criteria:
+  b144f119-bccc-49a2-a8ac-b8bc386d48c1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b144f119-bccc-49a2-a8ac-b8bc386d48c1
+    context_mapping:
+      node: node
+    bundles:
+      country: country
+selection_logic: and
+weight: -10
+relationships: {  }

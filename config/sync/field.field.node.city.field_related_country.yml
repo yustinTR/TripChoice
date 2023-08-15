@@ -1,0 +1,29 @@
+uuid: ad1bbd53-c8e2-41b7-91be-9841f83c9541
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_country
+    - node.type.city
+    - node.type.country
+id: node.city.field_related_country
+field_name: field_related_country
+entity_type: node
+bundle: city
+label: Land
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      country: country
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

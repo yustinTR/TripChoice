@@ -41,7 +41,10 @@
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
+    {% include 'tripchoice:title' with {
+      'element': 'h2',
+      'title': label,
+    } %}
   {% endif %}
   {{ title_suffix }}
   {% block content %}

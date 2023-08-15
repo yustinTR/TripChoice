@@ -1,0 +1,59 @@
+uuid: da61d88d-3e88-44fd-b1ab-8328ab855ce1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.city.field_header_image
+    - field.field.node.city.field_introduction
+    - field.field.node.city.field_paragraphs
+    - field.field.node.city.field_related_country
+    - node.type.city
+  module:
+    - entity_reference_revisions
+    - user
+id: node.city.default
+targetEntityType: node
+bundle: city
+mode: default
+content:
+  field_header_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_introduction:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_related_country:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+uuid: 0c2a7d25-e0f7-4bb8-af9a-8f97bf8831c2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_introduction
+    - node.type.stay
+id: node.stay.field_introduction
+field_name: field_introduction
+entity_type: node
+bundle: stay
+label: Introductie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

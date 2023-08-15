@@ -16,7 +16,7 @@
   --heading-font: var(--noto-serif);
 
   // Font settings
-  --default-font-size: 18px;
+  --default-font-size: 16px;
 
   // BASIC FONT SIZES
   --h1-font-size: 60px;
@@ -46,7 +46,9 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--primary);
   font-family: var(--heading-font);
+  font-weight: 500;
 }
 
 h1 {

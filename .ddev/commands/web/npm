@@ -3,5 +3,6 @@
 ## Description: Install or use npm packages.
 ## Usage: npm [flags] [args]
 ## Example: "npm run or npm install"
+#drush uli
 
 source /etc/profile && cd $THEME_FOLDER && npm $@

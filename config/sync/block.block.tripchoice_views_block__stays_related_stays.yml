@@ -1,0 +1,29 @@
+uuid: cee3d28b-d68d-4107-a489-9aa55d9bced1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.stays
+  module:
+    - system
+    - views
+  theme:
+    - tripchoice
+id: tripchoice_views_block__stays_related_stays
+theme: tripchoice
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:stays-related_stays'
+settings:
+  id: 'views_block:stays-related_stays'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/stad/*'

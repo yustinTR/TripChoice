@@ -12,7 +12,7 @@ dependencies:
 id: tripchoice_views_block__countries_countries_block
 theme: tripchoice
 region: content
-weight: 0
+weight: -7
 provider: null
 plugin: 'views_block:countries-countries_block'
 settings:

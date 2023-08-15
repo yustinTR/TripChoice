@@ -17,10 +17,10 @@
 <header>
   <div class="header" style="cursor: url('/sites/default/files/2023-08/cursor.svg') 30 20, auto !important;">
     <div class="header--bg-image" style="background-image:linear-gradient(rgba(140, 123, 108, 0.2) 10%, rgba(47, 56, 64, 1)),url({{ file_url( header_image_url) }})">
+      <div class="header--container">
       <div class="header--nav">
         {% include '@tripchoice/layout/header.html.twig' %}
       </div>
-      <div class="container">
         <div class="header--inner">
           <h1 class="header--title">{{ page_title }}</h1>
           <p class="header--text">{{ page_intro }}</p>
@@ -35,14 +35,10 @@
 </header>
 
 
-<main role="main" class="col-12">
-  <div class="container">
-    <div class="row">
-      <section class="content">
-        {{ page.content }}
-      </section>
-    </div>
-  </div>
+<main role="main" class="content">
+  <section class="content--container">
+    {{ page.content }}
+  </section>
 </main>
 
 

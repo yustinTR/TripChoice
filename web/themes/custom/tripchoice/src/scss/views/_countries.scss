@@ -1,5 +1,7 @@
 #block-tripchoice-views-block-countries-countries-block {
   .item-list {
+    margin: var(--spacer-xxl) 5vw;
+
     ul {
       padding: 0;
 
@@ -16,9 +18,14 @@
           position: relative;
 
           &--text {
-            bottom: 15px;
+            bottom: var(--spacer-s);
             color: var(--secondary-font-color);
             position: absolute;
+          }
+
+          &--qoute {
+            font-weight: normal;
+            text-transform: none;
           }
 
           &--title {

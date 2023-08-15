@@ -1,0 +1,22 @@
+uuid: e919da07-1fe5-4e95-8979-0291ae289122
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: stad
+label: Stad
+type: 'canonical_entities:node'
+pattern: '/stad/[node:title]'
+selection_criteria:
+  aa6c8453-c0d4-45ea-8c75-28f78311bbf2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: aa6c8453-c0d4-45ea-8c75-28f78311bbf2
+    context_mapping:
+      node: node
+    bundles:
+      city: city
+selection_logic: and
+weight: -9
+relationships: {  }

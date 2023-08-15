@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_image
     - field.storage.node.field_event_type
     - field.storage.node.field_event_date
+    - field.storage.node.field_related_country
     - field.storage.node.field_introduction
     - field.storage.node.field_country
     - field.storage.node.field_metatags
@@ -20,6 +21,7 @@ dependencies:
     - field.storage.node.field_trip_type
     - field.storage.node.field_stay_sort
     - field.storage.node.field_city
+    - field.storage.node.field_related_city
     - search_api.server.solr
     - core.entity_view_mode.node.search_index
   module:
@@ -130,7 +132,31 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_city
+  field_city_1:
+    label: Stad
+    datasource_id: 'entity:node'
+    property_path: field_city
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_city
   field_country:
+    label: Land
+    datasource_id: 'entity:node'
+    property_path: field_country
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_country
+  field_country_1:
+    label: Land
+    datasource_id: 'entity:node'
+    property_path: field_country
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_country
+  field_country_2:
     label: Land
     datasource_id: 'entity:node'
     property_path: field_country
@@ -197,6 +223,22 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_paragraphs
+  field_related_city:
+    label: 'gerelateerde stad'
+    datasource_id: 'entity:node'
+    property_path: field_related_city
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_related_city
+  field_related_country:
+    label: 'gerelateerd Land'
+    datasource_id: 'entity:node'
+    property_path: field_related_country
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_related_country
   field_stay_sort:
     label: 'Soort verblijf'
     datasource_id: 'entity:node'

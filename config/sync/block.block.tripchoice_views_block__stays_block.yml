@@ -1,0 +1,29 @@
+uuid: 8c623be1-58de-4e23-9629-22a54b250cba
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.stays
+  module:
+    - system
+    - views
+  theme:
+    - tripchoice
+id: tripchoice_views_block__stays_block
+theme: tripchoice
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:stays-block'
+settings:
+  id: 'views_block:stays-block'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

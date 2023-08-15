@@ -20,5 +20,5 @@ selection_criteria:
     bundles:
       faq: faq
 selection_logic: and
-weight: -8
+weight: -5
 relationships: {  }

@@ -1,0 +1,11 @@
+uuid: 79b5341e-89f0-49fd-8f4c-a7f357429b4d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.city
+id: node.city
+target_entity_type_id: node
+target_bundle: city
+default_langcode: site_default
+language_alterable: false

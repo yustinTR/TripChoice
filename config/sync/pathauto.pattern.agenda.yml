@@ -20,5 +20,5 @@ selection_criteria:
     bundles:
       agenda_item: agenda_item
 selection_logic: and
-weight: -10
+weight: -7
 relationships: {  }

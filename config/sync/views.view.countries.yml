@@ -146,14 +146,26 @@ display:
       style:
         type: html_list
         options:
-          grouping: {  }
           row_class: ''
           default_row_class: true
+          uses_fields: false
           type: ul
           wrapper_class: item-list
           class: ''
       row:
-        type: fields
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              city: default
+              country: default
+              events: default
+              faq: default
+              landings_page: default
+              news: default
+              page: default
+              stay: default
+              trip: default
       query:
         type: search_api_query
         options:
@@ -180,6 +192,22 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.content'
+        - 'search_api_list:content'
+  page_1:
+    id: page_1
+    display_title: Pagina
+    display_plugin: page
+    position: 4
+    display_options:
+      display_extenders: {  }
+      path: landen
     cache_metadata:
       max-age: -1
       contexts:
