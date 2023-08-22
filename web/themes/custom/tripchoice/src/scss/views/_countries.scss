@@ -1,55 +1,52 @@
-#block-tripchoice-views-block-countries-countries-block {
+.countries-block {
   .item-list {
     margin: var(--spacer-xxl) 5vw;
+    padding: 0;
 
-    ul {
-      padding: 0;
+    li {
+      filter: grayscale(80%);
+      list-style: none;
+      width: 100%;
 
-      li {
-        filter: grayscale(80%);
-        list-style: none;
-        width: 100%;
+      .country-item {
+        background-position: center;
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        height: 20vh;
+        position: relative;
 
-        .country-item {
-          background-position: center;
-          background-repeat: no-repeat, repeat;
-          background-size: cover;
-          height: 20vh;
-          position: relative;
+        &--text {
+          bottom: var(--spacer-s);
+          color: var(--secondary-font-color);
+          position: absolute;
+        }
 
-          &--text {
-            bottom: var(--spacer-s);
-            color: var(--secondary-font-color);
-            position: absolute;
-          }
+        &--qoute {
+          font-weight: normal;
+          text-transform: none;
+        }
 
-          &--qoute {
-            font-weight: normal;
-            text-transform: none;
-          }
-
-          &--title {
-            font-weight: bold;
-            text-transform: uppercase;
-          }
+        &--title {
+          font-weight: bold;
+          text-transform: uppercase;
         }
       }
+    }
 
-      @include media-breakpoint-up(md) {
-        display: flex;
+    @include media-breakpoint-up(md) {
+      display: flex;
 
-        li {
-          transition: 1s;
-          width: calc(100% / 3);
+      li {
+        transition: 1s;
+        width: calc(100% / 3);
 
-          .country-item {
-            height: 60vh;
-          }
+        .country-item {
+          height: 60vh;
+        }
 
-          &:hover {
-            filter: grayscale(0);
-            width: 50%;
-          }
+        &:hover {
+          filter: grayscale(0);
+          width: 50%;
         }
       }
     }

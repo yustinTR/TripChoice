@@ -1,0 +1,13 @@
+<a href="{{ url }}">
+  <div class="city-country-teaser">
+    <div class="city-item" style="background-image: linear-gradient(rgba(140, 123, 108, 0.2) 10%, rgba(47, 56, 64, 1)),url({{ file_url(node.field_header_image.entity.field_media_image.entity.fileuri ) }})">
+        <div class="city-item--container">
+          <div class="city-item--text">
+            <div class="city-item--icon"><i class="fa-solid fa-city"></i></div>
+            <div class="city-item--title"><h3>{{ node.title.value }}</h3></div>
+          </div>
+      </div>
+    </div>
+  </div>
+</a>
+
